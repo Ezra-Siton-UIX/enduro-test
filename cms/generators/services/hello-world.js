@@ -2,6 +2,10 @@
 	$seo_noframe: false,
 	$seo_expander: true,
 	$seo_hidden: false,
+
+			title: 'hello world',
+			text: 'wow',
+			
 	seo: {
 		title: 'hello world',
 		page_name: 'hello-world',

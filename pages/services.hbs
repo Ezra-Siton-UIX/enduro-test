@@ -4,12 +4,8 @@
 {{>swiper-css}}
 {{>vegas-css}}
 </head>
-<body id="WOW">
+<body>
 	{{#>body}}
-
-	<!-- *******************************************************
-	CONTENT START HER
-	******************************************************* -->
 
 	{{>inside_header}}
 
@@ -40,8 +36,6 @@
 
 	<main class="uk-container uk-container-large uk-margin-large-bottom" data-uk-height-viewport="offset-top: true">
 
-
-
 		{{#services}}
 		{{#each this}}
 		<article>
@@ -58,140 +52,15 @@
 	{{>footer}}
 	<!-- scripts -->
 	{{>uikit}}
-	{{>jquery}}
-	{{>fancybox}}
-	{{>vegas}}
-	{{>swiper}}
-	{{>responsiveslides}}
-	{{>readmore}}
+	
 	<!-- initialize -->
 	<script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function() {
 
-		// Fancybox3
-		$().fancybox({
-			selector : '[data-fancybox="web-design-uix"]',
-			thumbs   : true,
-			hash     : true,
-			infobar : true,
-			arrows : true,
-			buttons : [
-				'thumbs',
-				'close'
-			],
-			loop : true,
-			transitionEffect  : "slide",
-			thumbs : {
-				autoStart : false
-			},
-			clickContent : function( current, event ) {
-				return current.type === 'image' ? 'next' : false;
-			},
-		});
-
-		var mySwiper = new Swiper ('.swiper-container', {
-			// Optional parameters
-			slidesPerView: 3,
-			spaceBetween: 30,
-			loop: false,
-			grabCursor: true,
-			slideToClickedSlide: false,
-			freeMode: false,
-
-			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination',
-				dynamicBullets: true,
-			},
-
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-
-
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				hide: true,
-			},
-
-			// Responsive breakpoints
-			breakpoints: {
-				// when window width is <= 640px
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 30
-				}
-			}
-
-		});
-
-		// VEGAS
-		// Background SLideShow
-		$('header').vegas({
-			overlay: true,
-			transition: 'fade2',
-			transitionDuration: 5000,
-			delay: 9000,
-			color: 'black',
-			shuffle: true,
-			animation: 'random',
-			animationDuration: 15000,
-
-			overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/04.png',
-
-
-			slides: [
-				{ src: '/assets/img/webdesign/app-design-isometrics-mockup-uix-siton.jpg' },
-				{ src: '/assets/img/webdesign/webdesign-uix-resturant-homepage-siton.jpg' },
-				{ src: '/assets/img/webdesign/app-design-offcanvas-menu-design-siton.jpg' },
-				{ src: '/assets/img/webdesign/webdesign-uix-about-page-rtl-siton.jpg' },
-				{ src: '/assets/img/webdesign/webdesign-uix-startup-one-page-siton.jpg' },
-				{ src: '/assets/img/webdesign/webdesign-uix-about-page-siton.jpg' }
-			]
-		});
-
-
-		$('#vegas-laptop').vegas({
-
-			transition: 'fade',
-			timer: false,
-			color: 'black',
-			shuffle: false,
-
-			animationDuration: 20000,
-			slides: [
-				{ src: '/assets/img/homepage/mobile-design-uix-img.jpg' },
-				{ src: '/assets/img/homepage/mobile-design-uix-img-2.jpg' },
-
-			]
-		});
-
-		$('#vegas-laptop-white-macbook').vegas({
-
-			transition: 'fade2',
-			timer: false,
-			color: 'black',
-			shuffle: false,
-
-			animationDuration: 20000,
-			slides: [
-				{ src: '/assets/img/laptop.jpg' },
-				{ src: '/assets/img/laptop-2.jpg' },
-
-			]
-		});
-
-		//responsiveSlides
-		$(function() {
-			$(".rslides").responsiveSlides();
-		});
-
+	
 
 
 	});
-
 
 	</script>
 	{{/body}}<!-- הסוגר של זה בטמפלט של בודי -->

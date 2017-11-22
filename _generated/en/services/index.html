@@ -137,7 +137,7 @@
 		gtag('config', 'UA-107935375-1');
 	</script>	<!--plugins-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css"> <link rel="stylesheet" href="https://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">   </head>
-<body id="WOW">
+<body>
 
 <div id="wrapper" class="uk-offcanvas-content">
 	<!-- NAV -->
@@ -354,10 +354,6 @@
 	</div>
 	</nav>
 	
-		<!-- *******************************************************
-		CONTENT START HER
-		******************************************************* -->
-	
 		<header class="uk-background-cover uk-position-relative  uk-text-center" itemscope itemtype="http://schema.org/WPHeader">
 		  <div class="uk-grid uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
 		    <div class="uk-width-5-5@s  uk-section-secondary">
@@ -401,8 +397,6 @@
 		</nav>
 	
 		<main class="uk-container uk-container-large uk-margin-large-bottom" data-uk-height-viewport="offset-top: true">
-	
-	
 	
 	
 		</main>
@@ -682,188 +676,15 @@
 		
 		
 		
-		<!-- jQuery is required -->
-		<script  defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-		<!-- FancyBox3 --> 
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script> 
-		 
-		<!-- VEGAS --> 
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js"></script> 	<!-- SWIPER --> 
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>	<script>
-		document.addEventListener("DOMContentLoaded",function(){!function(n,t,e){n.fn.responsiveSlides=function(a){var s=n.extend({auto:!0,speed:500,timeout:4e3,pager:!1,nav:!1,random:!1,pause:!1,pauseControls:!0,prevText:"Previous",nextText:"Next",maxwidth:"",navContainer:"",manualControls:"",namespace:"rslides",before:n.noop,after:n.noop},a);return this.each(function(){e++;var o,i,r,l,u,c,d=n(this),f=0,p=d.children(),h=p.length,v=parseFloat(s.speed),m=parseFloat(s.timeout),C=parseFloat(s.maxwidth),x=s.namespace,b=x+e,y=x+"_nav "+b+"_nav",g=x+"_here",w=b+"_on",_=b+"_s",I=n("<ul class='"+x+"_tabs "+b+"_tabs' />"),q={float:"left",position:"relative",opacity:1,zIndex:2},z={float:"none",position:"absolute",opacity:0,zIndex:1},T=function(){var n=(document.body||document.documentElement).style;if("string"==typeof n[e="transition"])return!0;o=["Moz","Webkit","Khtml","O","ms"];var t,e=e.charAt(0).toUpperCase()+e.substr(1);for(t=0;t<o.length;t++)if("string"==typeof n[o[t]+e])return!0;return!1}(),k=function(t){s.before(t),T?(p.removeClass(w).css(z).eq(t).addClass(w).css(q),f=t,setTimeout(function(){s.after(t)},v)):p.stop().fadeOut(v,function(){n(this).removeClass(w).css(z).css("opacity",1)}).eq(t).fadeIn(v,function(){n(this).addClass(w).css(q),s.after(t),f=t})};if(s.random&&(p.sort(function(){return Math.round(Math.random())-.5}),d.empty().append(p)),p.each(function(n){this.id=_+n}),d.addClass(x+" "+b),a&&a.maxwidth&&d.css("max-width",C),p.hide().css(z).eq(0).addClass(w).css(q).show(),T&&p.show().css({"-webkit-transition":"opacity "+v+"ms ease-in-out","-moz-transition":"opacity "+v+"ms ease-in-out","-o-transition":"opacity "+v+"ms ease-in-out",transition:"opacity "+v+"ms ease-in-out"}),1<p.length){if(m<v+100)return;if(s.pager&&!s.manualControls){var M=[];p.each(function(n){M+="<li><a href='#' class='"+_+(n+=1)+"'>"+n+"</a></li>"}),I.append(M),a.navContainer?n(s.navContainer).append(I):d.after(I)}if(s.manualControls&&(I=n(s.manualControls)).addClass(x+"_tabs "+b+"_tabs"),(s.pager||s.manualControls)&&I.find("li").each(function(t){n(this).addClass(_+(t+1))}),(s.pager||s.manualControls)&&(c=I.find("a"),i=function(n){c.closest("li").removeClass(g).eq(n).addClass(g)}),s.auto&&(r=function(){u=setInterval(function(){p.stop(!0,!0);var n=f+1<h?f+1:0;(s.pager||s.manualControls)&&i(n),k(n)},m)})(),l=function(){s.auto&&(clearInterval(u),r())},s.pause&&d.hover(function(){clearInterval(u)},function(){l()}),(s.pager||s.manualControls)&&(c.bind("click",function(t){t.preventDefault(),s.pauseControls||l(),t=c.index(this),f===t||n("."+w).queue("fx").length||(i(t),k(t))}).eq(0).closest("li").addClass(g),s.pauseControls&&c.hover(function(){clearInterval(u)},function(){l()})),s.nav){x="<a href='#' class='"+y+" prev'>"+s.prevText+"</a><a href='#' class='"+y+" next'>"+s.nextText+"</a>",a.navContainer?n(s.navContainer).append(x):d.after(x);var D=(b=n("."+b+"_nav")).filter(".prev");b.bind("click",function(t){if(t.preventDefault(),!(t=n("."+w)).queue("fx").length){var e=p.index(t);t=e-1,e=e+1<h?f+1:0,k(n(this)[0]===D[0]?t:e),(s.pager||s.manualControls)&&i(n(this)[0]===D[0]?t:e),s.pauseControls||l()}}),s.pauseControls&&b.hover(function(){clearInterval(u)},function(){l()})}}if(void 0===document.body.style.maxWidth&&a.maxwidth){var F=function(){d.css("width","100%"),d.width()>C&&d.css("width",C)};F(),n(t).bind("resize",function(){F()})}})}}(jQuery,this,0),$(function(){$(".rslides").responsiveSlides()})});					
-		</script>					
-								
-								
-					<script>
-					/*!
-						* @preserve
-						*
-						* Readmore.js jQuery plugin
-						* Author: @jed_foster
-						* Project home: http://jedfoster.github.io/Readmore.js
-						* Licensed under the MIT license
-						*
-						* Debounce function from http://davidwalsh.name/javascript-debounce-function
-					*/
-					document.addEventListener("DOMContentLoaded", function() {
-						
-						!function(t){"function"==typeof define&&define.amd?define(["jquery"],t):"object"==typeof exports?module.exports=t(require("jquery")):t(jQuery)}(function(t){"use strict";function e(t,e,i){var o;return function(){var n=this,a=arguments,s=function(){o=null,i||t.apply(n,a)},r=i&&!o;clearTimeout(o),o=setTimeout(s,e),r&&t.apply(n,a)}}function i(t){var e=++h;return String(null==t?"rmjs-":t)+e}function o(t){var e=t.clone().css({height:"auto",width:t.width(),maxHeight:"none",overflow:"hidden"}).insertAfter(t),i=e.outerHeight(),o=parseInt(e.css({maxHeight:""}).css("max-height").replace(/[^-\d\.]/g,""),10),n=t.data("defaultHeight");e.remove();var a=o||t.data("collapsedHeight")||n;t.data({expandedHeight:i,maxHeight:o,collapsedHeight:a}).css({maxHeight:"none"})}function n(t){if(!d[t.selector]){var e=" ";t.embedCSS&&""!==t.blockCSS&&(e+=t.selector+" + [data-readmore-toggle], "+t.selector+"[data-readmore]{"+t.blockCSS+"}"),e+=t.selector+"[data-readmore]{transition: height "+t.speed+"ms;overflow: hidden;}",function(t,e){var i=t.createElement("style");i.type="text/css",i.styleSheet?i.styleSheet.cssText=e:i.appendChild(t.createTextNode(e)),t.getElementsByTagName("head")[0].appendChild(i)}(document,e),d[t.selector]=!0}}function a(e,i){this.element=e,this.options=t.extend({},r,i),n(this.options),this._defaults=r,this._name=s,this.init(),window.addEventListener?(window.addEventListener("load",c),window.addEventListener("resize",c)):(window.attachEvent("load",c),window.attachEvent("resize",c))}var s="readmore",r={speed:100,collapsedHeight:200,heightMargin:16,moreLink:'<a href="#">Read More</a>',lessLink:'<a href="#">Close</a>',embedCSS:!0,blockCSS:"display: block; width: 100%;",startOpen:!1,blockProcessed:function(){},beforeToggle:function(){},afterToggle:function(){}},d={},h=0,c=e(function(){t("[data-readmore]").each(function(){var e=t(this),i="true"===e.attr("aria-expanded");o(e),e.css({height:e.data(i?"expandedHeight":"collapsedHeight")})})},100);a.prototype={init:function(){var e=t(this.element);e.data({defaultHeight:this.options.collapsedHeight,heightMargin:this.options.heightMargin}),o(e);var n=e.data("collapsedHeight"),a=e.data("heightMargin");if(e.outerHeight(!0)<=n+a)return this.options.blockProcessed&&"function"==typeof this.options.blockProcessed&&this.options.blockProcessed(e,!1),!0;var s=e.attr("id")||i(),r=this.options.startOpen?this.options.lessLink:this.options.moreLink;e.attr({"data-readmore":"","aria-expanded":this.options.startOpen,id:s}),e.after(t(r).on("click",function(t){return function(i){t.toggle(this,e[0],i)}}(this)).attr({"data-readmore-toggle":s,"aria-controls":s})),this.options.startOpen||e.css({height:n}),this.options.blockProcessed&&"function"==typeof this.options.blockProcessed&&this.options.blockProcessed(e,!0)},toggle:function(e,i,o){o&&o.preventDefault(),e||(e=t('[aria-controls="'+this.element.id+'"]')[0]),i||(i=this.element);var n=t(i),a="",s="",r=!1,d=n.data("collapsedHeight");n.height()<=d?(a=n.data("expandedHeight")+"px",s="lessLink",r=!0):(a=d,s="moreLink"),this.options.beforeToggle&&"function"==typeof this.options.beforeToggle&&this.options.beforeToggle(e,n,!r),n.css({height:a}),n.on("transitionend",function(i){return function(){i.options.afterToggle&&"function"==typeof i.options.afterToggle&&i.options.afterToggle(e,n,r),t(this).attr({"aria-expanded":r}).off("transitionend")}}(this)),t(e).replaceWith(t(this.options[s]).on("click",function(t){return function(e){t.toggle(this,i,e)}}(this)).attr({"data-readmore-toggle":n.attr("id"),"aria-controls":n.attr("id")}))},destroy:function(){t(this.element).each(function(){var e=t(this);e.attr({"data-readmore":null,"aria-expanded":null}).css({maxHeight:"",height:""}).next("[data-readmore-toggle]").remove(),e.removeData()})}},t.fn.readmore=function(e){var i=arguments,o=this.selector;return e=e||{},"object"==typeof e?this.each(function(){if(t.data(this,"plugin_"+s)){var i=t.data(this,"plugin_"+s);i.destroy.apply(i)}e.selector=o,t.data(this,"plugin_"+s,new a(this,e))}):"string"==typeof e&&"_"!==e[0]&&"init"!==e?this.each(function(){var o=t.data(this,"plugin_"+s);o instanceof a&&"function"==typeof o[e]&&o[e].apply(o,Array.prototype.slice.call(i,1))}):void 0}});
-						
-						
-						
-						// Readmore
-						$('.readmore').readmore({
-							speed: 100, // (in milliseconds)
-							collapsedHeight: 150, // (in pixels)
-							heightMargin: 16, // (in pixels, avoids collapsing blocks that are only slightly larger than maxHeight)
-							moreLink: '<a class="" style="text-decoration: underline;" href="#">קרא עוד<span>&nbsp;+</span></a>', // (raw HTML)
-							lessLink: '<a class="" style="text-decoration: underline;" href="#">סגור <span>&nbsp;-</span></a>', // (raw HTML)
-							embedCSS: true, // (insert required CSS dynamically, set this to false if you include the necessary CSS in a stylesheet)
-							sectionCSS: 'display: block; width: 100%;', // (sets the styling of the blocks)
-							startOpen: false, // (do not immediately truncate, start in the fully opened position)
-							expandedClass: 'readmore-js-expanded', // (class added to expanded blocks)
-							collapsedClass: 'readmore-js-collapsed', // (class added to collapsed blocks)
-							beforeToggle: function() {}, // (called after a more or less link is clicked, but before the block is collapsed or expanded)
-							
-							afterToggle: function(trigger, element, expanded) {
-								if(! expanded) { // The "Close" link was clicked
-									$('html, body').animate( { scrollTop: element.offset().top }, {duration: 100 } );
-								}
-							}
-						});
-						
-						
-						
-						
-					});	
-				</script>	<!-- initialize -->
+		
+		<!-- initialize -->
 		<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function() {
 	
-			// Fancybox3
-			$().fancybox({
-				selector : '[data-fancybox="web-design-uix"]',
-				thumbs   : true,
-				hash     : true,
-				infobar : true,
-				arrows : true,
-				buttons : [
-					'thumbs',
-					'close'
-				],
-				loop : true,
-				transitionEffect  : "slide",
-				thumbs : {
-					autoStart : false
-				},
-				clickContent : function( current, event ) {
-					return current.type === 'image' ? 'next' : false;
-				},
-			});
-	
-			var mySwiper = new Swiper ('.swiper-container', {
-				// Optional parameters
-				slidesPerView: 3,
-				spaceBetween: 30,
-				loop: false,
-				grabCursor: true,
-				slideToClickedSlide: false,
-				freeMode: false,
-	
-				// If we need pagination
-				pagination: {
-					el: '.swiper-pagination',
-					dynamicBullets: true,
-				},
-	
-				// Navigation arrows
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-	
-	
-				scrollbar: {
-					el: '.swiper-scrollbar',
-					hide: true,
-				},
-	
-				// Responsive breakpoints
-				breakpoints: {
-					// when window width is <= 640px
-					640: {
-						slidesPerView: 1,
-						spaceBetween: 30
-					}
-				}
-	
-			});
-	
-			// VEGAS
-			// Background SLideShow
-			$('header').vegas({
-				overlay: true,
-				transition: 'fade2',
-				transitionDuration: 5000,
-				delay: 9000,
-				color: 'black',
-				shuffle: true,
-				animation: 'random',
-				animationDuration: 15000,
-	
-				overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/04.png',
-	
-	
-				slides: [
-					{ src: '/assets/img/webdesign/app-design-isometrics-mockup-uix-siton.jpg' },
-					{ src: '/assets/img/webdesign/webdesign-uix-resturant-homepage-siton.jpg' },
-					{ src: '/assets/img/webdesign/app-design-offcanvas-menu-design-siton.jpg' },
-					{ src: '/assets/img/webdesign/webdesign-uix-about-page-rtl-siton.jpg' },
-					{ src: '/assets/img/webdesign/webdesign-uix-startup-one-page-siton.jpg' },
-					{ src: '/assets/img/webdesign/webdesign-uix-about-page-siton.jpg' }
-				]
-			});
-	
-	
-			$('#vegas-laptop').vegas({
-	
-				transition: 'fade',
-				timer: false,
-				color: 'black',
-				shuffle: false,
-	
-				animationDuration: 20000,
-				slides: [
-					{ src: '/assets/img/homepage/mobile-design-uix-img.jpg' },
-					{ src: '/assets/img/homepage/mobile-design-uix-img-2.jpg' },
-	
-				]
-			});
-	
-			$('#vegas-laptop-white-macbook').vegas({
-	
-				transition: 'fade2',
-				timer: false,
-				color: 'black',
-				shuffle: false,
-	
-				animationDuration: 20000,
-				slides: [
-					{ src: '/assets/img/laptop.jpg' },
-					{ src: '/assets/img/laptop-2.jpg' },
-	
-				]
-			});
-	
-			//responsiveSlides
-			$(function() {
-				$(".rslides").responsiveSlides();
-			});
-	
+		
 	
 	
 		});
-	
 	
 		</script>
 		</div>
