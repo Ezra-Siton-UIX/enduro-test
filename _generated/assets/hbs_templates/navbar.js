@@ -19,7 +19,7 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":fu
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "						<div class=\"uk-navbar-dropdown uk-padding-remove-top\">\r\n							<ul class=\"uk-nav uk-navbar-dropdown-nav uk-visible@m\">\r\n"
+  return "						<div class=\"uk-navbar-dropdown uk-padding-small-top\">\r\n							<ul class=\"uk-nav uk-navbar-dropdown-nav uk-visible@m\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.portfolio : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "<!-- end each portfolio -->\r\n							</ul>\r\n						</div>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
