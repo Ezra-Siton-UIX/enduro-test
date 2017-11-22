@@ -2,7 +2,7 @@
 <nav  class="tm-header-transparent2" itemscope itemtype="http://schema.org/SiteNavigationElement">
 	<div class="uk-navbar-container uk-navbar-transparent" data-uk-sticky2="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-light; cls-inactive: uk-navbar-transparent2 uk-dark; top: 200; show-on-up: false" style="background: white;">
 		<div class="uk-container uk-container-large">
-			<div class="uk-navbar" data-uk-navbar="dropbar:true">
+			<div class="uk-navbar" data-uk-navbar="dropbar:true; mode: click; delay-hide: 500">
 				<!--LOGO -->
 				<a title="{{global.breadcrumbs_back_to_main}}" class="uk-navbar-item uk-logo  uk-visible@m uk-margin-{{global.left_on_rtl_right_on_ltr}} uk-text-primary" href="/{{ global.language }}/">
 					<span class="">
@@ -11,11 +11,10 @@
 				</a>
 				<!-- NAV PART I -->
 				<div class="uk-navbar-center uk-margin-small-{{global.right_on_rtl_left_on_ltr}}">
-
 					<ul id="nav-desktop" class="uk-navbar-nav uk-visible@m">
 						{{#each global.mainmenu.items}}
 						<li>
-							<a itemprop="url" title="{{this.label}}" data-uk-tooltip="pos: bottom" {{{ternary new_window 'target="_blank"'}}}
+							<a itemprop="url" title="{{this.label}}" {{{ternary new_window 'target="_blank"'}}}
 							href="{{this.link}}">
 							{{this.label}}
 							{{#if is_parent}}
@@ -24,7 +23,7 @@
 							{{/if}}
 						</a>
 						{{#if is_parent}}
-						<div class="uk-navbar-dropdown">
+						<div class="uk-navbar-dropdown uk-padding-remove-top">
 							<ul class="uk-nav uk-navbar-dropdown-nav uk-visible@m">
 								{{#each portfolio}}
 								<li>

@@ -3,7 +3,7 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":fu
 
   return "						<li>\r\n							<a itemprop=\"url\" title=\""
     + alias2(alias1((depth0 != null ? depth0.label : depth0), depth0))
-    + "\" data-uk-tooltip=\"pos: bottom\" "
+    + "\" "
     + ((stack1 = (helpers.ternary || (depth0 && depth0.ternary) || helpers.helperMissing).call(alias3,(depth0 != null ? depth0.new_window : depth0),"target=\"_blank\"",{"name":"ternary","hash":{},"data":data})) != null ? stack1 : "")
     + "\r\n							href=\""
     + alias2(alias1((depth0 != null ? depth0.link : depth0), depth0))
@@ -19,7 +19,7 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":fu
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "						<div class=\"uk-navbar-dropdown\">\r\n							<ul class=\"uk-nav uk-navbar-dropdown-nav uk-visible@m\">\r\n"
+  return "						<div class=\"uk-navbar-dropdown uk-padding-remove-top\">\r\n							<ul class=\"uk-nav uk-navbar-dropdown-nav uk-visible@m\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.portfolio : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "<!-- end each portfolio -->\r\n							</ul>\r\n						</div>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
@@ -33,7 +33,7 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":fu
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<!-- NAV -->\r\n<nav  class=\"tm-header-transparent2\" itemscope itemtype=\"http://schema.org/SiteNavigationElement\">\r\n	<div class=\"uk-navbar-container uk-navbar-transparent\" data-uk-sticky2=\"animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-light; cls-inactive: uk-navbar-transparent2 uk-dark; top: 200; show-on-up: false\" style=\"background: white;\">\r\n		<div class=\"uk-container uk-container-large\">\r\n			<div class=\"uk-navbar\" data-uk-navbar=\"dropbar:true\">\r\n				<!--LOGO -->\r\n				<a title=\""
+  return "<!-- NAV -->\r\n<nav  class=\"tm-header-transparent2\" itemscope itemtype=\"http://schema.org/SiteNavigationElement\">\r\n	<div class=\"uk-navbar-container uk-navbar-transparent\" data-uk-sticky2=\"animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-light; cls-inactive: uk-navbar-transparent2 uk-dark; top: 200; show-on-up: false\" style=\"background: white;\">\r\n		<div class=\"uk-container uk-container-large\">\r\n			<div class=\"uk-navbar\" data-uk-navbar=\"dropbar:true; mode: click; delay-hide: 500\">\r\n				<!--LOGO -->\r\n				<a title=\""
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.breadcrumbs_back_to_main : stack1), depth0))
     + "\" class=\"uk-navbar-item uk-logo  uk-visible@m uk-margin-"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.left_on_rtl_right_on_ltr : stack1), depth0))
@@ -43,7 +43,7 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"1":fu
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.company_name : stack1), depth0))
     + "\r\n					</span>\r\n				</a>\r\n				<!-- NAV PART I -->\r\n				<div class=\"uk-navbar-center uk-margin-small-"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.right_on_rtl_left_on_ltr : stack1), depth0))
-    + "\">\r\n\r\n					<ul id=\"nav-desktop\" class=\"uk-navbar-nav uk-visible@m\">\r\n"
+    + "\">\r\n					<ul id=\"nav-desktop\" class=\"uk-navbar-nav uk-visible@m\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.mainmenu : stack1)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "				</ul>\r\n			</div>\r\n\r\n			<!-- side selecr: r/l/center -->\r\n			<div class=\"uk-navbar-"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.global : depth0)) != null ? stack1.left_on_rtl_right_on_ltr : stack1), depth0))
