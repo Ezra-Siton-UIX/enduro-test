@@ -1,0 +1,9 @@
+define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.escapeExpression;
+
+  return "<header class=\"uk-background-cover uk-position-relative  uk-text-center\" itemscope itemtype=\"http://schema.org/WPHeader\">\r\n  <div class=\"uk-grid uk-grid-large uk-flex uk-flex-middle\" data-uk-grid>\r\n    <div class=\"uk-width-5-5@s  uk-section-secondary\">\r\n      <div  class=\" uk-background-center-center uk-background-norepeat uk-background-cover uk-section uk-section-secondary uk-section-xlarge\"\r\n      style=\"background-image: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('"
+    + alias1(((helper = (helper = helpers.inside_header_img || (depth0 != null ? depth0.inside_header_img : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"inside_header_img","hash":{},"data":data}) : helper)))
+    + "');\"\r\n      data-uk-parallax=\"bgy: -200; opacity: 1,0; viewport: 0.8\">\r\n      <div data-uk-parallax=\"opacity: 1,0; y: -50; viewport: 0.9\">\r\n        <h1  itemprop=\"headline\" class=\"uk-heading-primary  uk-text-center uk-margin-small-bottom\">\r\n          "
+    + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.seo : depth0)) != null ? stack1.title : stack1), depth0))
+    + "\r\n        </h1>\r\n        <a href=\"#main\" data-uk-scroll=\"\">Jump to Main<span class=\"uk-margin-small-left uk-margin-small-right\">&#8595;</span></a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n</header>\r\n";
+},"useData":true}); });

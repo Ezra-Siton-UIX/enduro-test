@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="{{ global.direction }}" lang="{{ global.language }}" class="{{ global.direction }}">
+<head>
+	<!-- meta -->
+	{{>meta}}
+	<!-- SEO -->
+	<title>{{seo.title}} | {{global.company_name}}</title>
+	<meta name="description" content="{{ seo.seo_description }}">
+	<meta name="keywords" content="{{ seo.seo_keywords }}">
+	<meta name="author" content="Ezra Siton">
+	<!-- FB OG -->
+	<meta property="og:url" content="https://ezra-siton-uix.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{seo.title}} | {{global.company_name}}" />
+	<meta property="og:description" content="{{ seo.seo_description }}" />
+	<meta property="og:image" content="{{ open_graph_image }}"/>
+
+	<style type="text/css">
+	{{>font-face}}
+	{{>clipboard-css}}
+
+	html.rtl #en-button {
+		font-weight: light;
+	}
+	html.ltr #heb-button {
+		font-weight: light;
+	}
+
+	@media screen and (min-width: 959px) {
+		html.rtl #heb-button {
+			color: black!important;
+		}
+		html.ltr #en-button {
+			color: black!important;
+		}
+	}
+	</style>
+	<!-- UIkit CSS    -->
+	<link rel="stylesheet" href="{{global.CSS}}" />
+	<!-- CSS CUSTOM -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	{{>google_analytics}}

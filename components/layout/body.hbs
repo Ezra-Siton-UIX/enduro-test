@@ -1,0 +1,63 @@
+
+<div id="wrapper" class="uk-offcanvas-content">
+	{{>navbar}}
+	{{>offcanvas}}
+	{{>@partial-block}}
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+	// Active state
+	function setActive() {
+		aObj = document.getElementById('nav-desktop').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive();
+
+	// Set lan buttons
+	let englishhPath =  currentPath.replace(/he/, "en");
+	let hebrewPath = currentPath.replace(/en/, "he");
+	document.getElementById('heb-button').href = hebrewPath;
+	document.getElementById('en-button').href = englishhPath;
+
+	// Active state
+	function setActive2() {
+		aObj = document.getElementById('nav-mobile').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive2();
+
+
+	// Active state
+	function setActive3() {
+		aObj = document.getElementById('footer_nav').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive3();
+
+
+
+});
+
+
+</script>
+
+{{>clipboard}}
+</body>
+</html>

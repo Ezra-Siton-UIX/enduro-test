@@ -1,0 +1,3 @@
+define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<!-- clipboard -->\r\n<script defer src=\"https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js\"></script>\r\n\r\n<script>\r\ndocument.addEventListener(\"DOMContentLoaded\", function() {\r\n  var clip = new Clipboard('#email-copy-btn');\r\n\r\nclip.on('success', function(e) {\r\n$('.copied').show();\r\n$('.copied').fadeOut(1000);\r\n});\r\n\r\n\r\n});\r\n\r\n</script>\r\n";
+},"useData":true}); });

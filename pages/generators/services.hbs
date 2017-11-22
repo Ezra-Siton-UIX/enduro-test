@@ -1,0 +1,70 @@
+{{>head}}
+<!--plugins-->
+{{>fancybox-css}}
+</head>
+<body itemscope itemtype="http://schema.org/AboutPage" style="background: #f8f8f8;">
+	{{#>body}}
+	{{>inside_header}}
+
+	<!-- Breadcrumb -->
+	<div class="uk-margin-medium-bottom" data-uk-sticky style="background:rgba(255,255,255, 0.95); padding: 2px 0;">
+		<nav class="uk-container uk-container-large uk-margin-bottom"  itemprop="breadcrumb"  >
+			<ol itemscope itemtype="http://schema.org/BreadcrumbList" class="uk-breadcrumb uk-margin-small-top">
+				<li itemprop="itemListElement" itemscope	itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/{{global.language}}" data-uk-tooltip="pos: bottom" title="{{global.breadcrumbs_back_to_main}}">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24">
+							<g class="nc-icon-wrapper" fill="#999999">
+								<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+							</g>
+						</svg>
+						<span itemprop="name">
+							{{global.home_label_name}}
+						</span>
+					</a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/{{global.language}}/services/" data-uk-tooltip="pos: bottom" title="{{seo.parent_page}}">
+						<span itemprop="name">
+							{{seo.parent_page}}
+						</span>
+					</a>
+					<meta itemprop="position" content="2" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/{{global.language}}/services/{{seo.page_name}}" data-uk-tooltip="pos: bottom" title="{{seo.page_name}}">
+						<span itemprop="name">
+							{{seo.page_name}}
+						</span>
+					</a>
+					<meta itemprop="position" content="3" />
+				</li>
+			</ol>
+		</nav>
+	</div>
+
+	
+	<main id="main" class="uk-section" style="min-height: 85vh;">
+		<div class="uk-container uk-container-large">
+
+			{{{main_text}}}
+
+		</div>
+
+
+
+	</main>
+
+	<!-- footer -->
+	{{>footer}}
+	<!-- scripts -->
+	{{>uikit}}
+
+	<!-- initialize -->
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function() {
+
+	});
+	</script>
+
+	{{/body}}

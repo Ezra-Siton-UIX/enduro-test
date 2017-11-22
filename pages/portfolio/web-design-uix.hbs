@@ -1,0 +1,185 @@
+{{>head}}
+<!--plugins-->
+{{>fancybox-css}}
+
+<style>
+html{
+
+	background:#f3f3f3;
+
+}
+a.mixitup-control-active{
+
+	border-bottom: 2px solid;
+	color: #222;
+	border-color: #1e87f0;
+	background: #eeeeee;
+}
+
+.uk-subnav .mixitup-control-active{
+	text-decoration: none;
+	border-bottom: 2px solid;
+	color: #222;
+	border-color: #1e87f0;
+	background: #eeeeee;
+}
+</style>
+
+
+</head>
+<body itemscope itemtype="http://schema.org/ImageGallery">
+	{{#>body}}
+
+	<header class="uk-background-cover uk-position-relative uk-text-center" itemscope itemtype="http://schema.org/WPHeader">
+		<div class="uk-grid uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
+			<div class="uk-width-5-5@s  uk-section-secondary">
+				<div  class=" uk-background-center-center uk-background-norepeat uk-background-cover uk-section uk-section-secondary uk-section-xlarge"
+				style="background-image: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('{{inside_header_img}}');"
+				data-uk-parallax="bgy: -200; opacity: 1,0; viewport: 0.8">
+				<h1  itemprop="headline" class="uk-heading-primary uk-margin-remove uk-text-center" data-uk-parallax="opacity: 1,0; y: -50; viewport: 0.9">
+					{{seo.title}}
+				</h1>
+				<a href="#main" data-uk-scroll="">Jump to Main<span class="uk-margin-small-left uk-margin-small-right">&#8595;</span></a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+
+	<!-- Breadcrumb -->
+	<div class="uk-margin-medium-bottom" data-uk-sticky style="background:rgba(255,255,255, 0.95); padding: 2px 0;">
+		<nav class="uk-container uk-container-large uk-margin-bottom"  itemprop="breadcrumb"  >
+			<ol itemscope itemtype="http://schema.org/BreadcrumbList" class="uk-breadcrumb uk-margin-small-top">
+				<li itemprop="itemListElement" itemscope	itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/{{global.language}}" data-uk-tooltip="pos: bottom" title="{{global.breadcrumbs_back_to_main}}">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24">
+							<g class="nc-icon-wrapper" fill="#999999">
+								<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+							</g>
+						</svg>
+						<span itemprop="name">
+							{{global.home_label_name}}
+						</span>
+					</a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/{{global.language}}/portfolio/" data-uk-tooltip="pos: bottom" title="{{seo.parent_page}}">
+						<span itemprop="name">
+							{{seo.parent_page}}
+						</span>
+					</a>
+					<meta itemprop="position" content="2" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/{{global.language}}/portfolio/graphic-design" data-uk-tooltip="pos: bottom" title="{{seo.page_name}}">
+						<span itemprop="name">
+							{{seo.page_name}}
+						</span>
+					</a>
+					<meta itemprop="position" content="3" />
+				</li>
+			</ol>
+		</nav>
+	</div>
+
+	<main id="main" class="uk-container uk-container-large">
+		<ul class="controls uk-tab  uk-margin uk-margin-large-bottom">
+			<span class="uk-margin-small-{{global.left_on_rtl_right_on_ltr}}">{{sort_by}}:</span>
+			<li><a type="button" class="control uk-b2utton" data-filter="all">All</a></li>
+			{{#each categories}}
+			<li><a type="button" class="control uk-butt2on" data-filter=".{{this.name}}">{{this.name}}</a></li>
+			{{/each}}<!-- / end each categories -->
+		</ul>
+
+		<h2 hidden class="uk-h1 uk-hidden uk-heading-line uk-text-right uk-margin-small-top uk-heading-bullet"> <strong>{{seo.page_name}}</strong> </h2>
+
+		<ul id="gallery" class="uk-text-center uk-grid-small uk-margin-large-bottom" data-uk-grid data-uk-scrollspy="target: > li; cls:uk-animation-fade; delay: 100">
+			<ul id="container" class="uk-margin-large-bottom"  style="list-style-type: none;" data-uk-margin data-uk-padding data-uk-grid>
+				{{#each gallery}}
+				<li class="mix uk-width-1-2@m {{this.category.name}}">
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a itemprop="contentUrl"  data-type="image" data-width="{{this.data_width}}" data-height="{{this.data_height}}" data-fancybox="web-design" href="/assets/img/webdesign/{{this.file_name}}">
+							<div class="uk-inline-clip uk-transition-toggle">
+								<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/800w/{{this.file_name}}"
+								alt="{{this.figcaption}}" />
+							</div>
+						</a>
+						<!-- image metadata -->
+						<meta itemprop="width" content="{{this.width}}">
+						<meta itemprop="height" content="{{this.height}}">
+						<meta itemprop="fileFormat" content="jpeg">
+						<!-- figcaption -->
+						<figcaption class="uk-display-inline-block uk-margin-small-top uk-margin-remove-bottom uk-text-bold" itemprop="description caption">
+							{{this.figcaption}}
+						</figcaption>
+
+						<ul class="uk-subnav uk-subnav-divider uk-margin-large-bottom uk-margin-remove-top uk-text-center">
+							<li><button href="#container" type="button" class="control uk-button uk-button-link uk-button-small" data-filter="all">#All</button></li>
+							<li><button href="#container" type="button" class="control uk-button uk-button-link uk-button-small" data-filter=".{{this.category.name}}">#{{this.category.name}}</button></li>
+						</ul>
+					</figure>
+				</li>
+				{{/each}}<!--/end each gallery -->
+			</ul>
+		</ul>
+	</main>
+
+
+
+
+
+
+	<!-- footer -->
+	{{>footer}}
+	<!-- scripts -->
+	{{>uikit}}
+	{{>jquery}}
+	{{>fancybox}}
+{{>mixitup}}
+	<!-- initialize -->
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function() {
+		//MIXITUP//
+		var containerEl = document.querySelector("#container");
+		// mixitup.Config
+		var mixer = mixitup(containerEl, {
+			controls: {
+				live: true,
+				toggleLogic: 'and'
+			},
+			animation: {
+				animateResizeContainer: true
+			},
+		});
+
+
+		// Custom click event - open fancyBox manually
+		// Choose what buttons to display by default
+		$("[data-fancybox]").fancybox({
+			selector : '[data-fancybox="web-design"]',
+			thumbs   : true,
+			hash     : true,
+			infobar : true,
+			arrows : true,
+			buttons : [
+				'thumbs',
+				'close'
+			],
+
+			loop : true,
+			transitionEffect  : "slide",
+			thumbs : {
+				autoStart : true
+			},
+			clickContent : function( current, event ) {
+				return current.type === 'image' ? 'next' : false;
+			},
+
+		});
+	});
+	</script>
+
+	{{/body}}

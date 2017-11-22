@@ -1,0 +1,16 @@
+{
+	"project_name": "Ezra Siton UIX",
+	"project_slug": "sn",
+	"s3": {
+		"bucket": "enduro.sethere",
+		"region": "eu-west-1"
+	},
+	"juicebox_enabled": true,
+	"cultures": [
+		"he",
+		"en"
+	],
+	"bricks": {
+		"enduro_quill": {}
+	}
+}

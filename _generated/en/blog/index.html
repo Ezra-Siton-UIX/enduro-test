@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="ltr">
+<head>
+	<!-- meta -->
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Disable tap highlight on IE -->         
+	<meta name="msapplication-tap-highlight" content="no"> 
+	
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+	
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Web Starter Kit">
+	<link rel="icon" sizes="192x192" href="/assets/img/touch/chrome-touch-icon-192x192.png">
+	
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+	<link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png">
+	
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/assets/img/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#2F3BA2">
+	
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#2F3BA2">
+	
+	<!--  This site was design and develope by ezra siton with uikit3 framework -->
+	
+	<!-- SEO -->
+	<title>blog | Ezra Siton</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="html5, web design, HTML5, schema.org expert, great web design, Graphic design, User Interface desgin, Mobile design, App design, Webflow expert, UiKit expert, Israel designer freelancer, CSS, responsive design">
+	<meta name="author" content="Ezra Siton">
+	<!-- FB OG -->
+	<meta property="og:url" content="https://ezra-siton-uix.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="blog | Ezra Siton" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content=""/>
+
+	<style type="text/css">
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:500; /*(medium)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-500.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-500.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:900; /*(black)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-900.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-900.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:300; /*(light)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-300.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-300.ttf') format('truetype');
+	}
+	
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:500; /*(medium)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-500.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-500.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:900; /*(black)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-900.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-900.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:300; /*(light)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-300.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-300.ttf') format('truetype');
+	}
+	
+	.copied {
+		color: white;
+		display: none;
+	}
+
+	html.rtl #en-button {
+		font-weight: light;
+	}
+	html.ltr #heb-button {
+		font-weight: light;
+	}
+
+	@media screen and (min-width: 959px) {
+		html.rtl #heb-button {
+			color: black!important;
+		}
+		html.ltr #en-button {
+			color: black!important;
+		}
+	}
+	</style>
+	<!-- UIkit CSS    -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" />
+	<!-- CSS CUSTOM -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107935375-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-107935375-1');
+	</script>	<!--plugins-->
+
+</head>
+<body id="WOW">
+
+<div id="wrapper" class="uk-offcanvas-content">
+	<!-- NAV -->
+	<nav  class="tm-header-transparent2" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<div class="uk-navbar-container uk-navbar-transparent" data-uk-sticky2="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-light; cls-inactive: uk-navbar-transparent2 uk-dark; top: 200; show-on-up: false" style="background: white;">
+			<div class="uk-container uk-container-large">
+				<div class="uk-navbar" data-uk-navbar="dropbar:true">
+					<!--LOGO -->
+					<a title="Back to main page" class="uk-navbar-item uk-logo  uk-visible@m uk-margin-right uk-text-primary" href="/en/">
+						<span class="">
+							Ezra Siton
+						</span>
+					</a>
+					<!-- NAV PART I -->
+					<div class="uk-navbar-center uk-margin-small-left">
+	
+						<ul id="nav-desktop" class="uk-navbar-nav uk-visible@m">
+							<li>
+								<a itemprop="url" title="Home" data-uk-tooltip="pos: bottom" 
+								href="/en">
+								Home
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="About" data-uk-tooltip="pos: bottom" 
+								href="/en/about">
+								About
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="Portfolio" data-uk-tooltip="pos: bottom" 
+								href="/en/portfolio/">
+								Portfolio
+								<svg class="uk-margin-small-right uk-margin-small-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="8" height="8"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g>
+								</svg>
+							</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav uk-visible@m">
+									<li>
+										<a href="/en/portfolio/web-design-uix">
+											Web design
+										</a>
+									</li>
+																	<li>
+										<a href="/en/portfolio/graphic-design">
+											Graphic design
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</div>
+						</li>
+							<li>
+								<a itemprop="url" title="Services" data-uk-tooltip="pos: bottom" 
+								href="/en/Services/">
+								Services
+								<svg class="uk-margin-small-right uk-margin-small-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="8" height="8"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g>
+								</svg>
+							</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav uk-visible@m">
+									<li>
+										<a href="/en/Services/hello-world">
+											Services
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</div>
+						</li>
+							<li>
+								<a itemprop="url" title="blog" data-uk-tooltip="pos: bottom" 
+								href="/en/blog">
+								blog
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="Contact" data-uk-tooltip="pos: bottom" 
+								href="/en/contact">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+	
+				<!-- side selecr: r/l/center -->
+				<div class="uk-navbar-right uk-visible@m">
+					<ul class="uk-navbar-nav ">
+						<li>
+							<a id="heb-button" href="/he">עברית</a>
+						</li>
+						<li>
+							<a id="en-button" href="/en">English</a>
+						</li>
+					</ul>
+				</div>
+				<!-- toogle icon visible only on phones -->
+				<div class="uk-navbar-right  uk-hidden@m" style="direction: rtl;">
+					<a class="uk-navbar-toggle" href="#" data-uk-toggle="target:#offcanvas-nav-primary">
+						<span data-uk-navbar-toggle-icon></span>
+						<span class="uk-margin-small-right">
+							&nbsp; MENU
+						</span>
+					</a>
+				</div>
+				<div class="uk-navbar-left uk-hidden@m uk-position-absolute uk-position-left">
+					<a class="uk-navbar-item uk-logo" href="/en/">Ezra Siton</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</nav>
+	
+	<!-- OFF CANVAS -->
+	<nav  itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<!--off-canvas btn show only on mobile -->
+		<div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: slide; flip: false">
+			<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+				<!-- navbar content her -->
+	
+				<div>
+					<img style="width:auto;" alt="Ezra Siton" itemprop="image" class="uk-border-circle" src="/assets/img/ezra-siton-profile-image/ezra-siton-profile-image-small.jpg">
+				</div>
+	
+				<!-- A - logo -->
+				<a class=" uk-logo uk-margin-small-top" href="/en/">Ezra Siton</a>
+				<!-- B - nav -->
+	
+	
+				<ul id="nav-mobile" class="uk-nav uk-nav-default uk-margin-top uk-nav-parent-icon" data-uk-nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<li >
+						<a itemprop="url" title="Home" data-uk-tooltip="pos: left" 
+						href="/en">
+						Home
+					</a>
+				</li>
+					<li >
+						<a itemprop="url" title="About" data-uk-tooltip="pos: left" 
+						href="/en/about">
+						About
+					</a>
+				</li>
+					<li class="uk-parent uk-open">
+						<a itemprop="url" title="Portfolio" data-uk-tooltip="pos: left" 
+						href="/en/portfolio/">
+						Portfolio
+					</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a title="Web design"  data-uk-tooltip="pos: left" href="/en/portfolio/web-design-uix">
+								- Web design
+							</a>
+						</li>
+											<li>
+							<a title="Graphic design"  data-uk-tooltip="pos: left" href="/en/portfolio/graphic-design">
+								- Graphic design
+							</a>
+						</li>
+						<!-- end each portfolio -->
+					</ul>
+				</li>
+					<li class="uk-parent uk-open">
+						<a itemprop="url" title="Services" data-uk-tooltip="pos: left" 
+						href="/en/Services/">
+						Services
+					</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a title="Services"  data-uk-tooltip="pos: left" href="/en/Services/hello-world">
+								- Services
+							</a>
+						</li>
+						<!-- end each portfolio -->
+					</ul>
+				</li>
+					<li >
+						<a itemprop="url" title="blog" data-uk-tooltip="pos: left" 
+						href="/en/blog">
+						blog
+					</a>
+				</li>
+					<li >
+						<a itemprop="url" title="Contact" data-uk-tooltip="pos: left" 
+						href="/en/contact">
+						Contact
+					</a>
+				</li>
+			</ul>
+	
+			<ul class="uk-nav uk-nav-default uk-margin-top">
+				<li class="uk-nav-divider"></li>
+				<li>
+					<a id="heb-button" href="/he">עברית</a>
+				</li>
+				<li>
+					<a id="en-button" href="/en">English</a>
+				</li>
+			</ul>
+	
+			<!--contact us -->
+			<div class="uk-margin-large-top">
+				<hr>
+				<svg style="opacity: 0.7;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 48 48">
+					<g class="nc-icon-wrapper" fill="#ffffff">
+						<path d="M31 2H15c-2.76 0-5 2.24-5 5v34c0 2.76 2.24 5 5 5h16c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5zm-8 42c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-8H14V8h18v28z"></path>
+					</g>
+				</svg>
+				&nbsp;
+				Phone:
+				<a href="0523-408-910" class="uk-link-text">
+					0523-408-910
+				</a>
+			</div>
+		</div>
+	</div>
+	</nav>
+	  <div style="min-height: 100vh;">
+	    <header class="uk-background-cover uk-position-relative  uk-text-center" itemscope itemtype="http://schema.org/WPHeader">
+	      <div class="uk-grid uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
+	        <div class="uk-width-5-5@s  uk-section-secondary">
+	          <div  class=" uk-background-center-center uk-background-norepeat uk-background-cover uk-section uk-section-secondary uk-section-xlarge"
+	          style="background-image: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('/remote/direct_uploads/1511350502_HD03.jpg');"
+	          data-uk-parallax="bgy: -200; opacity: 1,0; viewport: 0.8">
+	          <div data-uk-parallax="opacity: 1,0; y: -50; viewport: 0.9">
+	            <h1  itemprop="headline" class="uk-heading-primary  uk-text-center uk-margin-small-bottom">
+	              blog
+	            </h1>
+	            <a href="#main" data-uk-scroll="">Jump to Main<span class="uk-margin-small-left uk-margin-small-right">&#8595;</span></a>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    </header>
+	    <!-- Breadcrumb -->
+	    <nav class="uk-container uk-container-large uk-margin-bottom" itemprop="breadcrumb">
+	      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="uk-breadcrumb uk-margin-small-top">
+	        <li itemprop="itemListElement" itemscope	itemtype="http://schema.org/ListItem">
+	          <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="../en" data-uk-tooltip="pos: bottom" title="Back to main page">
+	            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24">
+	              <g class="nc-icon-wrapper" fill="#999999">
+	                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+	              </g>
+	            </svg>
+	            <span itemprop="name">Home</span>
+	          </a>
+	          <meta itemprop="position" content="1" />
+	        </li>
+	        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+	          <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="../en/blog">
+	            <span itemprop="name">
+	              blog
+	            </span>
+	          </a>
+	          <meta itemprop="position" content="2" />
+	        </li>
+	      </ol>
+	    </nav>
+	
+	    <main id="main" class="uk-container uk-container-large uk-margin-large-bottom" style="padding-top: 40px; margin-top: -40px;">
+	
+	      <article>
+        <h2>This is a hello blog entry</h2>
+        <p>You just learned how to create a blog with enduro.js</p>
+        <a href="/blog/article">Read more...</a>
+      </article>
+
+	    </main>
+	
+	  </div>
+	  <!-- footer -->
+	  <!-- FOOTER -->
+	  <footer itemscope itemtype="http://schema.org/WPFooter" class=" uk-visible@m uk-section uk-section-secondary uk-section-medium uk-padding-remove-bottom">
+	  	<div itemscope itemtype="http://schema.org/ProfessionalService" class="uk-container uk-container-large">
+	  		<div class="uk-grid uk-grid-divider uk-grid-large uk-margin-large-bottom" data-uk-grid="" data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 50; offset-top:0; repeat: false">
+	  			<div class="uk-width-expand@m uk-width-1-2@s">
+	  				<img alt="עזרא סיטון - תמונת פרופיל" itemprop="image" class="uk-border-circle" src="/assets/img/ezra-siton-profile-image/ezra-siton-profile-image-small.jpg">
+	  				<a href="//"><h2 itemprop="name" class="uk-text-bold uk-margin-small">
+	  					Ezra Siton
+	  				</h2></a>
+	  				<p itemprop="description" class="uk-margin-small uk-width-xlarge">
+	  					Web &amp; Graphic designer from israel. Master in webflow, wix, html &amp; CSS, UiKit, and PHP cms (Wordpress, Contrete5) and much more.
+	  				</p>
+	  				<h3 class="uk-margin-remove-bottom uk-margin-top uk-text-small">
+	  					Social Networks
+	  				</h3>
+	  
+	  				<ul class="uk-subnav uk-subnav-divider">
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://www.xplace.com/il/u/siton">Xplace</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://github.com/Ezra-Siton-UIX">Github</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://il.linkedin.com/in/ezra-siton-6789a069">Linkedin</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://codepen.io/ezra_siton/">CODEPEN</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://forum.webflow.com/u/Siton_Systems/summary">Webflow</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://www.concrete5.org/profile/-/view/229366/">Concrete5</a>
+	  					</li>
+	  					<li class="uk-margin-small-bottom">
+	  						<a itemprop="sameAs" target="_blank" href="https://teamtreehouse.com/ezrasiton">Treehouse</a>
+	  					</li>
+	  				</ul>
+	  			</div>
+	  
+	  			<!-- sitemap -->
+	  			<div class="uk-width-expand@m uk-width-1-2@s">
+	  				<h3 class="uk-h3">
+	  					Sitemap
+	  				</h3>
+	  
+	  				<nav id="footer_nav">
+	  					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-3nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+	  						<li >
+	  							<a itemprop="url" title="Home" data-uk-tooltip="pos: left" 
+	  							href="/en">
+	  							Home
+	  						</a>
+	  					</li>
+	  						<li >
+	  							<a itemprop="url" title="About" data-uk-tooltip="pos: left" 
+	  							href="/en/about">
+	  							About
+	  						</a>
+	  					</li>
+	  						<li class="uk-par3ent uk-3open">
+	  							<a itemprop="url" title="Portfolio" data-uk-tooltip="pos: left" 
+	  							href="/en/portfolio/">
+	  							Portfolio
+	  						</a>
+	  						<ul class="uk-nav-sub">
+	  							<li>
+	  								<a title="Web design"  data-uk-tooltip="pos: left" href="/en/portfolio/web-design-uix">
+	  									Web design
+	  								</a>
+	  							</li>
+	  														<li>
+	  								<a title="Graphic design"  data-uk-tooltip="pos: left" href="/en/portfolio/graphic-design">
+	  									Graphic design
+	  								</a>
+	  							</li>
+	  							<!-- end each portfolio -->
+	  						</ul>
+	  					</li>
+	  						<li class="uk-par3ent uk-3open">
+	  							<a itemprop="url" title="Services" data-uk-tooltip="pos: left" 
+	  							href="/en/Services/">
+	  							Services
+	  						</a>
+	  						<ul class="uk-nav-sub">
+	  							<li>
+	  								<a title="Services"  data-uk-tooltip="pos: left" href="/en/Services/hello-world">
+	  									Services
+	  								</a>
+	  							</li>
+	  							<!-- end each portfolio -->
+	  						</ul>
+	  					</li>
+	  						<li >
+	  							<a itemprop="url" title="blog" data-uk-tooltip="pos: left" 
+	  							href="/en/blog">
+	  							blog
+	  						</a>
+	  					</li>
+	  						<li >
+	  							<a itemprop="url" title="Contact" data-uk-tooltip="pos: left" 
+	  							href="/en/contact">
+	  							Contact
+	  						</a>
+	  					</li>
+	  				</ul>
+	  			</nav>
+	  
+	  
+	  
+	  		</div>
+	  
+	  		<div class="uk-width-expand@m uk-width-1-2@s">
+	  			<h3 class="uk-h3">
+	  				Contact info
+	  			</h3>
+	  			<ul class="uk-list uk-list-divider">
+	  				<li>
+	  					<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+	  						<g class="nc-icon-wrapper" fill="#ffffff">
+	  							<path fill="#ffffff" d="M8,0C4.1,0,1,3.1,1,7c0,1.9,0.7,3.7,2.1,5c0.1,0.1,4.1,3.7,4.2,3.8c0.4,0.3,1,0.3,1.3,0 c0.1-0.1,4.2-3.7,4.2-3.8c1.4-1.3,2.1-3.1,2.1-5C15,3.1,11.9,0,8,0z M8,9C6.9,9,6,8.1,6,7s0.9-2,2-2c1.1,0,2,0.9,2,2S9.1,9,8,9z"></path>
+	  						</g>
+	  					</svg>
+	  					Address
+	  				</h4>
+	  				<address class="uk-margin-remove" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	  					<strong itemprop="name">WeWork Sarona</strong> -
+	  					<span itemprop="streetAddress">
+	  						3 Aluf Kalman Magen
+	  					</span>,
+	  					<span itemprop="addressLocality">
+	  						Tel Aviv
+	  					</span>,
+	  					<span itemprop="postalCode">
+	  						6107075
+	  					</span>.
+	  					<span itemscope itemtype="http://schema.org/Place">
+	  						<a class="uk-link" title="Open  in google maps" itemprop="hasMap" href="https://goo.gl/maps/Pz3pFSKLdqA2" target="_blank">
+	  							Open  in google maps
+	  						</a>
+	  					</span>
+	  				</address>
+	  				<div itemtype="http://schema.org/GeoCoordinates" itemscope="" itemprop="geo">
+	  					<meta itemprop="latitude" content="32.071304" />
+	  					<meta itemprop="longitude" content="34.787250" />
+	  				</div>
+	  			</li>
+	  			<li>
+	  				<h4 class="uk-margin-remove-top uk-margin-remove-bottom">
+	  					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="13" height="13"><g class="nc-icon-wrapper" fill="#ffffff"><path fill="#ffffff" d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M19,13h-8V5h2v6h6V13z"></path></g></svg>
+	  					Opening hours
+	  				</h4>
+	  				<p class="uk-margin-small">
+	  					<span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 09:00-18:00">
+	  						Sunday to Thursday - 9 am - 6 pm
+	  					</span>
+	  				</p>
+	  			</li>
+	  			<li>
+	  				<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+	  					<g class="nc-icon-wrapper" fill="#ffffff">
+	  						<path fill="#ffffff" d="M15.285,12.305l-2.578-2.594c-0.39-0.393-1.025-0.393-1.416-0.002L9,12L4,7l2.294-2.294 c0.39-0.39,0.391-1.023,0.001-1.414l-2.58-2.584C3.324,0.317,2.691,0.317,2.3,0.708L0.004,3.003L0,3c0,7.18,5.82,13,13,13 l2.283-2.283C15.673,13.327,15.674,12.696,15.285,12.305z"></path>
+	  						<path data-color="color-2" fill="#ffffff" d="M16,8h-2c0-3.309-2.691-6-6-6V0C12.411,0,16,3.589,16,8z"></path>
+	  						<path data-color="color-2" fill="#ffffff" d="M12,8h-2c0-1.103-0.897-2-2-2V4C10.206,4,12,5.794,12,8z"></path>
+	  					</g>
+	  				</svg>
+	  				Phone
+	  			</h4>
+	  			<a href="tel:	0523-408-910" class="uk-margin"><span itemprop="telephone">0523-408-910</span></a>
+	  		</li>
+	  		<li>
+	  			<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+	  				<g class="nc-icon-wrapper" fill="#ffffff">
+	  					<path data-color="color-2" fill="#ffffff" d="M15,1H1C0.4,1,0,1.4,0,2v1.4l8,4.5l8-4.4V2C16,1.4,15.6,1,15,1z"></path>
+	  					<path fill="#ffffff" d="M7.5,9.9L0,5.7V14c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V5.7L8.5,9.9C8.22,10.04,7.78,10.04,7.5,9.9z"></path>
+	  				</g>
+	  			</svg>
+	  			Email
+	  		</h4>
+	  		<!-- Target -->
+	  		<a id="email" class="uk-display-inline-block" itemprop="email" href="mailto:siton22@hotmail.com">siton22@hotmail.com</a>
+	  		<!-- Trigger -->
+	  		<button id="email-copy-btn" class="uk-button uk-button-primary uk-button-small uk-margin-small-right uk-margin-left" data-clipboard-target="#email">
+	  			Copy
+	  		</button>
+	  		<div>&nbsp;<span class="copied">Address Copied</span></div>
+	  	</li>
+	  </ul>
+	  </div>
+	  </div>
+	  <!-- END grid -->
+	  <!-- LOGOS -->
+	  <a class="uk-link-reset" href="https://www.endurojs.com/" target="_blank">
+	  	<img src="/assets/img/webdesign/logos/enduro-nodejs-cms.png" alt="Enduro.js CMS logo">
+	  </a>&nbsp;
+	  <a class="uk-link-reset" href="https://getuikit.com/" target="_blank" style="direction: ltr;">
+	  	<div class="uk-display-inline-block" style="direction: ltr;">
+	  		<img src="/assets/img/webdesign/logos/uikit-logo-white.svg" alt="לוגו של הפריימוורק לבניית אתרים - uiKit">
+	  		<span> UIkit</span>
+	  	</div>
+	  </a>
+	  <div class="">
+	  	<p class="uk-text-center uk-text-small">
+	  		Website Design & Development: Ezra Siton  |  This site was built using UIkit3 | © All Rights Reserved to Ezra Siton, 2018
+	  	</p>
+	  </div>
+	  </div><!--end conatiner -->
+	  <!-- UP BTN -->
+	  <div title="TOP" data-uk-tooltip="pos: top-center">
+	  	<a href="#" data-uk-scroll="">
+	  		<div class="uk-section uk-section-primary uk-section-small uk-text-center">
+	  			<div class="uk-button uk-button-default uk-button-large uk-icon">
+	  				BACK TO TOP
+	  				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" xml:space="preserve" width="24" height="24">
+	  					<g class="nc-icon-wrapper" fill="#ffffff">
+	  						<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="22" x2="12" y2="2" stroke-linejoin="miter" stroke-linecap="butt"></line>
+	  						<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5,9 12,2 19,9 " stroke-linejoin="miter"></polyline>
+	  					</g>
+	  				</svg>
+	  			</div>
+	  		</div>
+	  	</a>
+	  </div>
+	  </footer>
+	  <!-- MOBILE FOOTER -->
+	  <footer id="mobile-footer" class="uk-hidden@m uk-light uk-padding-small uk-section-secondary">
+	  	<div class=" uk-margin-auto uk-flex uk-flex-center">
+	  		<!-- Mobile menu - less links! -->
+	  		<ul class="uk-subnav uk-subnav-divider" data-uk-margin="">
+	  			<li class="uk-active">
+	  				<a href="/">בית</a>
+	  			</li>
+	  			<li>
+	  				<a href="/about">אודות</a>
+	  			</li>
+	  			<li>
+	  				<a href="/portfolio">תיק עבודות</a>
+	  			</li>
+	  			<li>
+	  				<a href="/contact">צור קשר</a>
+	  			</li>
+	  		</ul>
+	  	</div>
+	  	<!-- TOP BTN -->
+	  	<div title="TOP" data-uk-tooltip="pos: top-center">
+	  		<a href="#" data-uk-scroll="">
+	  			<div class="uk-section uk-section-secondary uk-section-small uk-text-center">
+	  				<div class="uk-button uk-button-default uk-button-large uk-icon">
+	  					BACK TO TOP
+	  					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" xml:space="preserve" width="24" height="24">
+	  						<g class="nc-icon-wrapper" fill="#ffffff">
+	  							<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="22" x2="12" y2="2" stroke-linejoin="miter" stroke-linecap="butt"></line>
+	  							<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5,9 12,2 19,9 " stroke-linejoin="miter"></polyline>
+	  						</g>
+	  					</svg>
+	  				</div>
+	  			</div>
+	  		</a>
+	  	</div>
+	  	<!-- copyrights -->
+	  	<p class="uk-text-center uk-text-small uk-hidden@m uk-margin-remove"><small>
+	  		&copy;
+	  		כל הזכויות ל-<a  title="עזרא סיטון" href="//">עזרא סיטון</a>
+	  		,
+	  		2018</small></p>
+	  	</footer>
+	  	<!-- /end FOOTER -->
+	  <!-- scripts -->
+	  <!-- UIkit JS --> 
+	  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script> 
+	  
+	  
+	  
+	
+	  <!-- initialize -->
+	  <script type="text/javascript">
+	  document.addEventListener("DOMContentLoaded", function() {
+	
+	
+	  });
+	
+	
+	  </script>
+	  </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+	// Active state
+	function setActive() {
+		aObj = document.getElementById('nav-desktop').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive();
+
+	// Set lan buttons
+	let englishhPath =  currentPath.replace(/he/, "en");
+	let hebrewPath = currentPath.replace(/en/, "he");
+	document.getElementById('heb-button').href = hebrewPath;
+	document.getElementById('en-button').href = englishhPath;
+
+	// Active state
+	function setActive2() {
+		aObj = document.getElementById('nav-mobile').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive2();
+
+
+	// Active state
+	function setActive3() {
+		aObj = document.getElementById('footer_nav').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive3();
+
+
+
+});
+
+
+</script>
+
+<!-- clipboard -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var clip = new Clipboard('#email-copy-btn');
+
+clip.on('success', function(e) {
+$('.copied').show();
+$('.copied').fadeOut(1000);
+});
+
+
+});
+
+</script>
+</body>
+</html>
+<!-- הסוגר של זה בטמפלט של בודי -->

@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he" class="rtl">
+<head>
+	<!-- meta -->
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Disable tap highlight on IE -->         
+	<meta name="msapplication-tap-highlight" content="no"> 
+	
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+	
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Web Starter Kit">
+	<link rel="icon" sizes="192x192" href="/assets/img/touch/chrome-touch-icon-192x192.png">
+	
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+	<link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png">
+	
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/assets/img/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#2F3BA2">
+	
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#2F3BA2">
+	
+	<!--  This site was design and develope by ezra siton with uikit3 framework -->
+	
+	<!-- SEO -->
+	<title>אודות | עזרא סיטון</title>
+	<meta name="description" content="מעצב גרפי ומפתח אתרים ורסטילי ומיומן, משלב יכולות עיצוב קריאטייבי, ידע בשימושיות UIX ומיומנות בפיתוח אתרים FRONTEND.">
+	<meta name="keywords" content="html5, schema.org, Web design, Graphic design, User Interface desgin, Mobile design, App design, Webflow expert, UiKit expert, Israel designer freelancer, WIX, Material design, HTML &amp; CSS, Web designer, Graphic designer, UIX designer, FRONTEND developer">
+	<meta name="author" content="Ezra Siton">
+	<!-- FB OG -->
+	<meta property="og:url" content="https://ezra-siton-uix.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="אודות | עזרא סיטון" />
+	<meta property="og:description" content="מעצב גרפי ומפתח אתרים ורסטילי ומיומן, משלב יכולות עיצוב קריאטייבי, ידע בשימושיות UIX ומיומנות בפיתוח אתרים FRONTEND." />
+	<meta property="og:image" content=""/>
+
+	<style type="text/css">
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:500; /*(medium)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-500.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-500.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:900; /*(black)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-900.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-900.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:300; /*(light)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-300.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-300.ttf') format('truetype');
+	}
+	
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:500; /*(medium)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-500.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-500.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-500.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:900; /*(black)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-900.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-900.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-900.ttf') format('truetype');
+	}
+	@font-face{
+	font-family:'atlas-pro';
+	font-weight:300; /*(light)*/
+	font-style: normal;
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot');
+	src: url('/assets/fonts/atlas-pro-aaa-300.eot#iefix') format('embedded-opentype'),
+	url('/assets/fonts/atlas-pro-aaa-300.woff') format('woff'),
+	url('/assets/fonts/atlas-pro-aaa-300.ttf') format('truetype');
+	}
+	
+	.copied {
+		color: white;
+		display: none;
+	}
+
+	html.rtl #en-button {
+		font-weight: light;
+	}
+	html.ltr #heb-button {
+		font-weight: light;
+	}
+
+	@media screen and (min-width: 959px) {
+		html.rtl #heb-button {
+			color: black!important;
+		}
+		html.ltr #en-button {
+			color: black!important;
+		}
+	}
+	</style>
+	<!-- UIkit CSS    -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit-rtl.min.css" />
+	<!-- CSS CUSTOM -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107935375-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-107935375-1');
+	</script>	<!--plugins-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">      
+<style>
+/* =========== about-page ================ */
+/* TAB */
+@media screen and (max-width: 900px) {
+	.uk-tab .uk-text-large{
+		text-align: center;
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 900px) {
+	.uk-tab li a:hover{
+		background-color: rgba(51, 51, 51, 0.05);
+	}
+}
+.uk-accordion-title{
+	background: white;
+	padding: 15px 25px;
+	border-bottom: 1px solid  rgba(51, 51, 51, 0.1);
+}
+.uk-accordion-title:hover{
+	background: rgba(51, 51, 51, 0.01);
+}
+.uk-accordion-content{
+	margin-top: 0px;
+	padding: 0px 25px 25px 5px;
+}
+
+aside ul li span{
+
+	margin-left: 1px;
+}
+
+.item:not(:first-child) {
+	border-top: 1px solid #e5e5e5;
+}
+</style>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/AboutPage" style="background: #f8f8f8;">
+
+<div id="wrapper" class="uk-offcanvas-content">
+	<!-- NAV -->
+	<nav  class="tm-header-transparent2" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<div class="uk-navbar-container uk-navbar-transparent" data-uk-sticky2="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-light; cls-inactive: uk-navbar-transparent2 uk-dark; top: 200; show-on-up: false" style="background: white;">
+			<div class="uk-container uk-container-large">
+				<div class="uk-navbar" data-uk-navbar="dropbar:true">
+					<!--LOGO -->
+					<a title="חזרה למסך הראשי" class="uk-navbar-item uk-logo  uk-visible@m uk-margin-left uk-text-primary" href="/he/">
+						<span class="">
+							עזרא סיטון
+						</span>
+					</a>
+					<!-- NAV PART I -->
+					<div class="uk-navbar-center uk-margin-small-right">
+	
+						<ul id="nav-desktop" class="uk-navbar-nav uk-visible@m">
+							<li>
+								<a itemprop="url" title="בית" data-uk-tooltip="pos: bottom" 
+								href="/">
+								בית
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="אודות" data-uk-tooltip="pos: bottom" 
+								href="/he/about">
+								אודות
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="תיק עבודות" data-uk-tooltip="pos: bottom" 
+								href="/he/portfolio">
+								תיק עבודות
+								<svg class="uk-margin-small-right uk-margin-small-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="8" height="8"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g>
+								</svg>
+							</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav uk-visible@m">
+									<li>
+										<a href="/he/portfolio/web-design-uix">
+											עיצוב אתרים
+										</a>
+									</li>
+																	<li>
+										<a href="/he/portfolio/graphic-design">
+											עיצוב גרפי
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</div>
+						</li>
+							<li>
+								<a itemprop="url" title="שירותים" data-uk-tooltip="pos: bottom" 
+								href="/he/services">
+								שירותים
+								<svg class="uk-margin-small-right uk-margin-small-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" width="8" height="8"><g class="nc-icon-wrapper" fill="#1e87f0"><path fill="#1e87f0" d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g>
+								</svg>
+							</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav uk-visible@m">
+									<li>
+										<a href="/he/services/hello-world">
+											hello-world
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</div>
+						</li>
+							<li>
+								<a itemprop="url" title="בלוג" data-uk-tooltip="pos: bottom" 
+								href="/he/blog">
+								בלוג
+							</a>
+						</li>
+							<li>
+								<a itemprop="url" title="צור קשר" data-uk-tooltip="pos: bottom" 
+								href="/he/contact">
+								צור קשר
+							</a>
+						</li>
+					</ul>
+				</div>
+	
+				<!-- side selecr: r/l/center -->
+				<div class="uk-navbar-left uk-visible@m">
+					<ul class="uk-navbar-nav ">
+						<li>
+							<a id="heb-button" href="/he">עברית</a>
+						</li>
+						<li>
+							<a id="en-button" href="/en">English</a>
+						</li>
+					</ul>
+				</div>
+				<!-- toogle icon visible only on phones -->
+				<div class="uk-navbar-right  uk-hidden@m" style="direction: rtl;">
+					<a class="uk-navbar-toggle" href="#" data-uk-toggle="target:#offcanvas-nav-primary">
+						<span data-uk-navbar-toggle-icon></span>
+						<span class="uk-margin-small-right">
+							&nbsp; תפריט
+						</span>
+					</a>
+				</div>
+				<div class="uk-navbar-left uk-hidden@m uk-position-absolute uk-position-left">
+					<a class="uk-navbar-item uk-logo" href="/he/">עזרא סיטון</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</nav>
+	
+	<!-- OFF CANVAS -->
+	<nav  itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<!--off-canvas btn show only on mobile -->
+		<div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: slide; flip: false">
+			<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+				<!-- navbar content her -->
+	
+				<div>
+					<img style="width:auto;" alt="עזרא סיטון" itemprop="image" class="uk-border-circle" src="/assets/img/ezra-siton-profile-image/ezra-siton-profile-image-small.jpg">
+				</div>
+	
+				<!-- A - logo -->
+				<a class=" uk-logo uk-margin-small-top" href="/he/">עזרא סיטון</a>
+				<!-- B - nav -->
+	
+	
+				<ul id="nav-mobile" class="uk-nav uk-nav-default uk-margin-top uk-nav-parent-icon" data-uk-nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<li >
+						<a itemprop="url" title="בית" data-uk-tooltip="pos: left" 
+						href="/">
+						בית
+					</a>
+				</li>
+					<li >
+						<a itemprop="url" title="אודות" data-uk-tooltip="pos: left" 
+						href="/he/about">
+						אודות
+					</a>
+				</li>
+					<li class="uk-parent uk-open">
+						<a itemprop="url" title="תיק עבודות" data-uk-tooltip="pos: left" 
+						href="/he/portfolio">
+						תיק עבודות
+					</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a title="עיצוב אתרים"  data-uk-tooltip="pos: left" href="/he/portfolio/web-design-uix">
+								- עיצוב אתרים
+							</a>
+						</li>
+											<li>
+							<a title="עיצוב גרפי"  data-uk-tooltip="pos: left" href="/he/portfolio/graphic-design">
+								- עיצוב גרפי
+							</a>
+						</li>
+						<!-- end each portfolio -->
+					</ul>
+				</li>
+					<li class="uk-parent uk-open">
+						<a itemprop="url" title="שירותים" data-uk-tooltip="pos: left" 
+						href="/he/services">
+						שירותים
+					</a>
+					<ul class="uk-nav-sub">
+						<li>
+							<a title="hello-world"  data-uk-tooltip="pos: left" href="/he/services/hello-world">
+								- hello-world
+							</a>
+						</li>
+						<!-- end each portfolio -->
+					</ul>
+				</li>
+					<li >
+						<a itemprop="url" title="בלוג" data-uk-tooltip="pos: left" 
+						href="/he/blog">
+						בלוג
+					</a>
+				</li>
+					<li >
+						<a itemprop="url" title="צור קשר" data-uk-tooltip="pos: left" 
+						href="/he/contact">
+						צור קשר
+					</a>
+				</li>
+			</ul>
+	
+			<ul class="uk-nav uk-nav-default uk-margin-top">
+				<li class="uk-nav-divider"></li>
+				<li>
+					<a id="heb-button" href="/he">עברית</a>
+				</li>
+				<li>
+					<a id="en-button" href="/en">English</a>
+				</li>
+			</ul>
+	
+			<!--contact us -->
+			<div class="uk-margin-large-top">
+				<hr>
+				<svg style="opacity: 0.7;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 48 48">
+					<g class="nc-icon-wrapper" fill="#ffffff">
+						<path d="M31 2H15c-2.76 0-5 2.24-5 5v34c0 2.76 2.24 5 5 5h16c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5zm-8 42c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-8H14V8h18v28z"></path>
+					</g>
+				</svg>
+				&nbsp;
+				נייד:
+				<a href="0523-408-910" class="uk-link-text">
+					0523-408-910
+				</a>
+			</div>
+		</div>
+	</div>
+	</nav>
+	
+	
+	
+		<header class="uk-background-cover uk-position-relative  uk-text-center" itemscope itemtype="http://schema.org/WPHeader">
+		  <div class="uk-grid uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
+		    <div class="uk-width-5-5@s  uk-section-secondary">
+		      <div  class=" uk-background-center-center uk-background-norepeat uk-background-cover uk-section uk-section-secondary uk-section-xlarge"
+		      style="background-image: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('/remote/direct_uploads/1511272744_webdesign-uix-about-page-siton.jpg');"
+		      data-uk-parallax="bgy: -200; opacity: 1,0; viewport: 0.8">
+		      <div data-uk-parallax="opacity: 1,0; y: -50; viewport: 0.9">
+		        <h1  itemprop="headline" class="uk-heading-primary  uk-text-center uk-margin-small-bottom">
+		          אודות
+		        </h1>
+		        <a href="#main" data-uk-scroll="">Jump to Main<span class="uk-margin-small-left uk-margin-small-right">&#8595;</span></a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</header>
+	
+	
+		<!-- Breadcrumb -->
+		<nav class="uk-container uk-container-large uk-margin-bottom" itemprop="breadcrumb">
+			<ol itemscope itemtype="http://schema.org/BreadcrumbList" class="uk-breadcrumb uk-margin-small-top">
+				<li itemprop="itemListElement" itemscope	itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="../he" data-uk-tooltip="pos: bottom" title="חזרה למסך הראשי">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24">
+							<g class="nc-icon-wrapper" fill="#999999">
+								<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+							</g>
+						</svg>
+						<span itemprop="name">ראשי</span>
+					</a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="../he/about"> <span itemprop="name">אודות</span></a>
+					<meta itemprop="position" content="2" />
+				</li>
+			</ol>
+		</nav>
+	
+		<section class="uk-section uk-section-default uk-section-l2arge">
+			<div class="uk-container uk-container-large">
+				<div class="uk-flex uk-grid-large uk-flex-middle" data-uk-grid="">
+					<div class="uk-width-2-5@m">
+						<h2 itemprop="headline" class="uk-h2 uk-text-bold uk-heading-line"><span>למטבע שני צדדים</span></h2>
+						<p itemprop="description" class="uk-text-lead">
+							אני מעצב אינטרנט רב תחומי, לומד ומתמחה בכל תחומי הפיתוח והעיצוב הנדרשים על מנת לעצב, לבנות ולהעלות אתר אינטרנט. אני אוהב לבנות יחסים ארוכי טווח עם הלקוחות שלי ולחוש סיפוק מפרוייקט שאני מרגיש חלק חשוב בהצלחתו.
+						</p>
+					</div>
+					<div class="uk-width-3-5@m" id="gallery">
+						<ul class="uk-grid-match uk-grid-small" id="nested-grid" data-uk-grid="">
+							<li class="uk-width-1-2m uk-width-1-2">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a itemprop="contentUrl" data-fancybox="web-design-uix" data-width="1920" data-height="1080" href="/assets/img/webdesign/responsive-web-design-uix-clean-design-hr-siton.jpg">
+										<div class="uk-inline-clip uk-transition-toggle">
+											<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/800w/responsive-web-design-uix-clean-design-hr-siton.jpg" alt="עיצוב אתר רספונסיבי" />
+										</div>
+									</a>
+									<!-- image metadata -->
+									<meta itemprop="width" content="800">
+									<meta itemprop="height" content="450">
+									<meta itemprop="fileFormat" content="jpeg">
+									<!-- figcaption -->
+									<figcaption class="uk-margin-small-top uk-hidden uk-text-small" itemprop="description caption">עיצוב אתר רספונסיבי</figcaption>
+								</figure>
+							</li>
+							<li class="uk-width-1-2m uk-width-1-2">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a itemprop="contentUrl" data-fancybox="web-design-uix" data-width="1920" data-height="1080" href="/assets/img/webdesign/webdesign-uix-startup-one-page-siton.jpg">
+										<div class="uk-inline-clip uk-transition-toggle">
+											<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/800w/webdesign-uix-startup-one-page-siton.jpg" alt="עיצוב אתר בסגנון נקי" />
+										</div>
+									</a>
+									<!-- image metadata -->
+									<meta itemprop="width" content="800">
+									<meta itemprop="height" content="450">
+									<meta itemprop="fileFormat" content="jpeg">
+									<!-- figcaption -->
+									<figcaption class="uk-margin-small-top  uk-hidden uk-text-small" itemprop="description caption">עיצוב אתר בסגנון נקי</figcaption>
+								</figure>
+							</li>
+							<li class="uk-width-1-3@m uk-width-1-1">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a itemprop="contentUrl" data-fancybox="web-design-uix" data-width="1920" data-height="1080" href="/assets/img/webdesign/app-design-uix-profile-screen-siton.jpg">
+										<div class="uk-inline-clip uk-transition-toggle">
+											<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/800w/app-design-uix-profile-screen-siton.jpg" alt="עיצוב למובייל - דף פרופיל" />
+										</div>
+									</a>
+									<!-- image metadata -->
+									<meta itemprop="width" content="300">
+									<meta itemprop="height" content="169">
+									<meta itemprop="fileFormat" content="jpeg">
+									<!-- figcaption -->
+									<figcaption class="uk-margin-small-top  uk-hidden uk-text-small" itemprop="description caption">עיצוב למובייל - דף פרופיל</figcaption>
+								</figure>
+							</li>
+							<li class="uk-width-1-3@m uk-width-1-2">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a itemprop="contentUrl" data-fancybox="web-design-uix" data-width="1920" data-height="1080" href="/assets/img/webdesign/webdesign-uix-about-page-rtl-siton.jpg">
+										<div class="uk-inline-clip uk-transition-toggle">
+											<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/300w/webdesign-uix-about-page-rtl-siton.jpg" alt="עיצוב אתר רספונסיבי - דף אודות" />
+										</div>
+									</a>
+									<!-- image metadata -->
+									<meta itemprop="width" content="300">
+									<meta itemprop="height" content="169">
+									<meta itemprop="fileFormat" content="jpeg">
+									<!-- figcaption -->
+									<figcaption class="uk-margin-small-top  uk-hidden uk-text-small" itemprop="description caption">עיצוב אתר רספונסיבי - דף אודות</figcaption>
+								</figure>
+							</li>
+							<li class="uk-width-1-3@m uk-width-1-2">
+								<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									<a itemprop="contentUrl" data-fancybox="web-design-uix" data-width="1920" data-height="1080" href="/assets/img/webdesign/app-design-offcanvas-menu-design-siton.jpg">
+										<div class="uk-inline-clip uk-transition-toggle">
+											<img itemprop="thumbnail" class="uk-transition-scale-up uk-transition-opaque" src="/assets/img/webdesign/thumbnails/300w/app-design-offcanvas-menu-design-siton.jpg" alt="   עיצוב למובייל - תפריט רספונסיבי - offCanvas" />
+										</div>
+									</a>
+									<!-- image metadata -->
+									<meta itemprop="width" content="300">
+									<meta itemprop="height" content="169">
+									<meta itemprop="fileFormat" content="jpeg">
+									<!-- figcaption -->
+									<figcaption class="uk-hidden uk-margin-small-top  uk-text-small" itemprop="description caption">
+										עיצוב למובייל - תפריט רספונסיבי - offCanvas
+										<!-- optionally define copyright -->
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+						<p class="uk-margin-medium-top uk-text-center">
+							<a href="portfolio/web-design-uix.html" class="uk-button uk-button-primary">
+							צפה בכל העבודות
+						</a>
+					</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<!-- main - tabs + aside -->
+		<div class="uk-section">
+			<div class="uk-container uk-container-large uk-margin-large-bottom">
+				<div class="uk-grid uk-grid-large" data-uk-grid="">
+					<!-- col1 -->
+					<aside class="uk-width-1-4@m uk-margin-medium-bottom" itemscope itemtype="http://schema.org/WPSideBar">
+						<div class="uk-card uk-card-default uk-card-body">
+							<header>
+								<h2 class="uk-margin-small uk-text-meta">
+									מי אני
+								</h2>
+								<h3 itemprop="name" class="uk-h1 uk-margin-remove-top">
+									עזרא סיטון
+								</h3>
+								<figure class="uk-margin">
+									<img width="150" src="/assets/img/ezra-siton-profile-image/ezra-siton-profile-image.jpg" class="uk-border-circle" alt="עזרא סיטון - תמונת פרופיל">
+								</figure>
+								<p itemprop="about" class="uk-margin-medium uk-h3 uk-margin-remove-top">
+									מעצב גרפי ומפתח אתרים ורסטילי המשלב יכולות עיצוב ופיתוח. בעל ניסיון רב בסטודיואים ומשרדי פרסום מובילים.
+								</p>
+							</header>
+							<h3 class="uk-margin-small  uk-text-small">
+								יכולות
+							</h3>
+							<ul class="uk-padding-remove uk-margin-remove" data-uk-margin data-uk-padding data-uk-scrollspy="target: > li; cls:uk-animation-fade; delay: 30">
+								<li class="uk-display-inline-block">
+									<a target="_blank" title="Webflow" href="https://webflow.com/">
+										<span itemprop="keywords" class="uk-label">
+											Webflow
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="WIX" href="https://www.wix.com/">
+										<span itemprop="keywords" class="uk-label">
+											WIX
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="Invision" href="https://www.invisionapp.com/">
+										<span itemprop="keywords" class="uk-label">
+											Invision
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="Web Design" href="https://en.wikipedia.org/wiki/Web_design">
+										<span itemprop="keywords" class="uk-label">
+											Web Design
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="FRONDEND" href="https://en.wikipedia.org/wiki/Front-end_web_development">
+										<span itemprop="keywords" class="uk-label">
+											FRONDEND
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="HTML &amp; CSS" href="https://webflow.com/">
+										<span itemprop="keywords" class="uk-label">
+											HTML &amp; CSS
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="Material Design" href="https://webflow.com/">
+										<span itemprop="keywords" class="uk-label">
+											Material Design
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="TYPOGRAPHY" href="https://en.wikipedia.org/wiki/Typography">
+										<span itemprop="keywords" class="uk-label">
+											TYPOGRAPHY
+										</span>
+									</a>
+								</li>
+															<li class="uk-display-inline-block">
+									<a target="_blank" title="Adobe CC" href="http://www.adobe.com/il_he/creativecloud.html">
+										<span itemprop="keywords" class="uk-label">
+											Adobe CC
+										</span>
+									</a>
+								</li>
+								 <!-- end each  aside.skills -->
+							</ul>
+							<hr>
+							<h3 class="uk-margin-small  uk-text-small">
+								מה אני עושה
+							</h3>
+							<p class="uk-margin-medium uk-margin-remove-top uk-text-meta">
+								עיצוב גרפי / עיצוב ופיתוח אתרים / שפה מותגית
+							</p>
+							<hr>
+							<h3 class="uk-margin-small  uk-text-small">
+								רשתות חברתיות
+							</h3>
+							<ul class="uk-subnav uk-subnav-divider" data-uk-margin>
+								<li>
+									<a itemprop="sameAs" title="XPLACE" target="_blank" href="https://www.xplace.com/il/u/siton">
+										XPLACE
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="GITHUB" target="_blank" href="https://github.com/Ezra-Siton-UIX">
+										GITHUB
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="LINKEDIN" target="_blank" href="https://il.linkedin.com/in/ezra-siton-6789a069">
+										LINKEDIN
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="CODEPEN" target="_blank" href="https://codepen.io/ezra_siton/">
+										CODEPEN
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="WEBFLOW" target="_blank" href="https://forum.webflow.com/u/Siton_Systems/summary">
+										WEBFLOW
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="Concrete5" target="_blank" href="https://www.concrete5.org/profile/-/view/229366/">
+										Concrete5
+									</a>
+								</li>
+															<li>
+									<a itemprop="sameAs" title="TREEHOUSE" target="_blank" href="https://teamtreehouse.com/ezrasiton">
+										TREEHOUSE
+									</a>
+								</li>
+								 <!-- end each  aside.sameAs -->
+							</ul>
+						</div>
+						<!--/card -->
+					</aside>
+					<!--col-2 -->
+					<!-- MAIN CONTENT-->
+					<main id="main" class="uk-width-3-4@m" itemprop="mainContentOfPage" style="padding-top: 40px; margin-top: -40px;">
+						<!-- TAB MENU -->
+						<nav id="tab-menu" class="">
+							<ul class="uk-tab uk-child-width-expand" data-uk-switcher="connect: .tab-content; animation: uk-animation-fade">
+								<li class="">
+									<a href="#" title="Professional knowledge" data-uk-tooltip><span class="uk-text-large"> <span class="st-text-light"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" xml:space="preserve" width="24" height="24">
+										<g class="nc-icon-wrapper" fill="#444444">
+											<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M4,34l6-6l12,8 c0,0,15.3-15.5,36-26l2,6c0,0-21.9,12.8-38,38L4,34z" stroke-linejoin="miter"></path>
+										</g>
+									</svg></span><br>
+									ידע
+								</span></a>
+							</li>
+							<li>
+								<a href="#" title="Education" data-uk-tooltip><span class="uk-text-large">
+									<span class="st-text-light"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" xml:space="preserve" width="24" height="24">
+										<g class="nc-icon-wrapper" fill="#444444">
+											<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M51,9V2H7v54 c0,3.314,2.686,6,6,6" stroke-linejoin="miter"></path>
+											<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19,56c0,3.314-2.686,6-6,6 h40c3.314,0,6-2.686,6-6v-4H19V56z" stroke-linejoin="miter"></path>
+											<line data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="16" x2="34" y2="16" stroke-linejoin="miter"></line>
+											<line data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="27" x2="34" y2="27" stroke-linejoin="miter"></line>
+											<line data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="38" x2="29" y2="38" stroke-linejoin="miter"></line>
+											<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-miterlimit="10" points="58,28.484 58,43 51,38 44,43 44,28.484 " stroke-linecap="butt"></polyline>
+											<circle data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="51" cy="20" r="11" stroke-linejoin="miter"></circle>
+											<line fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="51" y1="52" x2="51" y2="45" stroke-linejoin="miter"></line>
+										</g>
+									</svg>
+								</span>
+								<br>
+								השכלה
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Work Experience" data-uk-tooltip><span class="uk-text-large"><span class="st-text-light"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" xml:space="preserve" width="24" height="24">
+							<g class="nc-icon-wrapper" fill="#444444">
+								<polyline data-color="color-2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 22,12 22,4 42,4 42,12 " stroke-linejoin="miter"></polyline>
+								<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M2,44V16 c0-2.209,1.791-4,4-4h52c2.209,0,4,1.791,4,4v28H2z" stroke-linejoin="miter"></path>
+								<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M58,49v7 c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4v-7" stroke-linejoin="miter"></path>
+								<rect data-color="color-2" x="22" y="22" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="20" height="12" stroke-linejoin="miter"></rect>
+							</g>
+						</svg></span><br>
+						ניסיון
+					</span></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- TAB CONTENT -->
+		<div class="uk-switcher uk-margin-large-bottom uk-margin-medium-top tab-content" itemscope itemtype="http://schema.org/WebPageElement">
+			<!-- 1/3 - TAB I - Technology -->
+			<section id="technology">
+				<h2 itemprop="headline" class="uk-width-1-1 uk-hidden">ידע</h2>
+				<!-- ACCORDION -->
+				<div class="uk-width-1-1" data-uk-accordion="collapsible: true; multiple: true">
+					<!-- accordion 1/3 -->
+					<div class="uk-open uk-card uk-card-default">
+						<h3 class="uk-accordion-title uk-text-bold uk-text-primary">
+							• הצד היצירתי
+						</h3>
+						<!-- accordion content 1/3 -->
+						<div class="uk-accordion-content" data-uk-grid>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									עיצוב ממשקים UIX
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="עיצוב אתרי אינטרנט" href="https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%A6%D7%95%D7%91_%D7%90%D7%AA%D7%A8_%D7%90%D7%99%D7%A0%D7%98%D7%A8%D7%A0%D7%98" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב אתרי אינטרנט
+										</a>
+									</li>
+									<li>
+										<a title="שיפור ורענון עיצוב של אתר קיים" href="https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%A6%D7%95%D7%91_%D7%90%D7%AA%D7%A8_%D7%90%D7%99%D7%A0%D7%98%D7%A8%D7%A0%D7%98" class="uk-link-reset" rel="tag" target="_blank">
+											שיפור ורענון עיצוב של אתר קיים
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב ממשקים" href="https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%A9%D7%A7_%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב ממשקים
+										</a>
+									</li>
+									<li>
+										<a title="אפיון ועיצוב חווית משתמש (UIX)" href="https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%95%D7%99%D7%99%D7%AA_%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9" class="uk-link-reset" rel="tag" target="_blank">
+											אפיון ועיצוב חווית משתמש (UIX)
+										</a>
+									</li>
+									<li>
+										<a title="אפליקציות מובייל" href="https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%9E%D7%95%D7%91%D7%99%D7%99%D7%9C" class="uk-link-reset" rel="tag" target="_blank">
+											אפליקציות מובייל
+										</a>
+									</li>
+									<li>
+										<a title="פרוטוטייפינג בתוכנת- Invision" href="https://www.invisionapp.com/" class="uk-link-reset" rel="tag" target="_blank">
+											פרוטוטייפינג בתוכנת- Invision
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									PRINT
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="עיצוב גרפי" href="https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%A6%D7%95%D7%91_%D7%92%D7%A8%D7%A4%D7%99" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב גרפי
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב ברושורים, חוברות ומגזינים" href="" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב ברושורים, חוברות ומגזינים
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב מודעות והתאמת גדלים" href="" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב מודעות והתאמת גדלים
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב לוגו ובניית זהות מותגית" href="https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%92%D7%95" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב לוגו ובניית זהות מותגית
+										</a>
+									</li>
+									<li>
+										<a title="פוטושופ למתקדמים" href="http://www.adobe.com/il_he/products/photoshop.html" class="uk-link-reset" rel="tag" target="_blank">
+											פוטושופ למתקדמים
+										</a>
+									</li>
+									<li>
+										<a title="הבאה לדפוס" href="" class="uk-link-reset" rel="tag" target="_blank">
+											הבאה לדפוס
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									DIGITAL
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="עיצוב של דפי נחיתה" href="https://he.wikipedia.org/wiki/%D7%93%D7%A3_%D7%A0%D7%97%D7%99%D7%AA%D7%94" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב של דפי נחיתה
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב באנרים ל- Google Adwords" href="https://www.google.com/intl/iw_il/ads/" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב באנרים ל- Google Adwords
+										</a>
+									</li>
+									<li>
+										<a title="עיצוב באנרים לפייסבוק" href="https://www.facebook.com/business/products/ads" class="uk-link-reset" rel="tag" target="_blank">
+											עיצוב באנרים לפייסבוק
+										</a>
+									</li>
+									<li>
+										<a title="הקמה ועיצוב של עמודי פייסבוק" href="https://www.facebook.com/business/" class="uk-link-reset" rel="tag" target="_blank">
+											הקמה ועיצוב של עמודי פייסבוק
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="uk-open uk-card uk-card-default">
+						<h3 class="uk-accordion-title uk-text-bold uk-text-primary">
+							• הצד הטכני
+						</h3>
+						<!-- accordion content 1/3 -->
+						<div class="uk-accordion-content" data-uk-grid>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									פיתוח אתרים
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="Uikit - פריימוורק מתקדם לבניית אתרים וממשקים רספונסיביים" href="https://getuikit.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Uikit - פריימוורק מתקדם לבניית אתרים וממשקים רספונסיביים
+										</a>
+									</li>
+									<li>
+										<a title="HTML5 &amp; CSS3 &amp; JS" href="https://www.youtube.com/watch?v&#x3D;gT0Lh1eYk78" class="uk-link-reset" rel="tag" target="_blank">
+											HTML5 &amp; CSS3 &amp; JS
+										</a>
+									</li>
+									<li>
+										<a title="כתיבה סמנטית ונקייה של קוד" href="https://en.wikipedia.org/wiki/Semantic_HTML" class="uk-link-reset" rel="tag" target="_blank">
+											כתיבה סמנטית ונקייה של קוד
+										</a>
+									</li>
+									<li>
+										<a title="בניית קבצי עיצוב בפוטושופ - אידיאליים לחיתוך והמרה לקוד" href="http://photoshopetiquette.com/" class="uk-link-reset" rel="tag" target="_blank">
+											בניית קבצי עיצוב בפוטושופ - אידיאליים לחיתוך והמרה לקוד
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									מערכות ניהול תוכן - CMS
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="וורדפרס בעברית" href="https://he.wordpress.org/" class="uk-link-reset" rel="tag" target="_blank">
+											וורדפרס בעברית
+										</a>
+									</li>
+									<li>
+										<a title="Concrete5" href="http://www.concrete5.org/" class="uk-link-reset" rel="tag" target="_blank">
+											Concrete5
+										</a>
+									</li>
+									<li>
+										<a title="Enduro.js - Node.js CMS" href="https://www.endurojs.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Enduro.js - Node.js CMS
+										</a>
+									</li>
+									<li>
+										<a title="PHP" href="http://php.net/" class="uk-link-reset" rel="tag" target="_blank">
+											PHP
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									טכנולוגיות ווב מודרניות
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="שיפור מהירות האתר (WEB SPEED OPTIMIZATION)" href="https://developers.google.com/speed/pagespeed/" class="uk-link-reset" rel="tag" target="_blank">
+											שיפור מהירות האתר (WEB SPEED OPTIMIZATION)
+										</a>
+									</li>
+									<li>
+										<a title="נגישות (WEB ACCESSIBILITY)" href="https://www.w3.org/WAI/" class="uk-link-reset" rel="tag" target="_blank">
+											נגישות (WEB ACCESSIBILITY)
+										</a>
+									</li>
+									<li>
+										<a title="קידום אתרים אורגני (SEO)" href="https://support.google.com/webmasters/answer/40349?hl&#x3D;iw" class="uk-link-reset" rel="tag" target="_blank">
+											קידום אתרים אורגני (SEO)
+										</a>
+									</li>
+									<li>
+										<a title="JQUERY PLUGINS" href="https://plugins.jquery.com/" class="uk-link-reset" rel="tag" target="_blank">
+											JQUERY PLUGINS
+										</a>
+									</li>
+									<li>
+										<a title="כתיבה סמנטית - SCHEMA.ORG" href="http://schema.org/" class="uk-link-reset" rel="tag" target="_blank">
+											כתיבה סמנטית - SCHEMA.ORG
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="uk-open uk-card uk-card-default">
+						<h3 class="uk-accordion-title uk-text-bold uk-text-primary">
+							• תוכנות
+						</h3>
+						<!-- accordion content 1/3 -->
+						<div class="uk-accordion-content" data-uk-grid>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									עיצוב גרפי
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="Photoshop" href="http://www.adobe.com/il_he/products/photoshop.html" class="uk-link-reset" rel="tag" target="_blank">
+											Photoshop
+										</a>
+									</li>
+									<li>
+										<a title="Indesign" href="http://www.adobe.com/il_he/products/indesign.html" class="uk-link-reset" rel="tag" target="_blank">
+											Indesign
+										</a>
+									</li>
+									<li>
+										<a title="Illustrator" href="http://www.adobe.com/il_he/products/illustrator.html" class="uk-link-reset" rel="tag" target="_blank">
+											Illustrator
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									עיצוב אתרים וממשקים
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="Photoshop" href="http://www.adobe.com/il_he/products/photoshop.html" class="uk-link-reset" rel="tag" target="_blank">
+											Photoshop
+										</a>
+									</li>
+									<li>
+										<a title="INVISION" href="https://www.invisionapp.com/" class="uk-link-reset" rel="tag" target="_blank">
+											INVISION
+										</a>
+									</li>
+									<li>
+										<a title="Craft By invision" href="https://www.invisionapp.com/craft" class="uk-link-reset" rel="tag" target="_blank">
+											Craft By invision
+										</a>
+									</li>
+									<li>
+										<a title="Pinegrow Web Editor" href="https://pinegrow.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Pinegrow Web Editor
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box1 uk-width-1-3@m  uk-margin-top">
+								<h4 class="uk-text-bold uk-heading-bullet uk-margin-top2">
+									בילדרים / בוני אתרים
+								</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li>
+										<a title="Webflow" href="https://webflow.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Webflow
+										</a>
+									</li>
+									<li>
+										<a title="Wix" href="https://www.wix.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Wix
+										</a>
+									</li>
+									<li>
+										<a title="Squarespace" href="https://www.squarespace.com/" class="uk-link-reset" rel="tag" target="_blank">
+											Squarespace
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 2/3 - TAB 2 - Education -->
+			<section id="education" class="">
+				<h2 itemprop="headline">לימודים</h2>
+				<div id="wrapper" class="uk-card uk-card-default uk-card-small uk-card-body">
+					<div class="item">
+						<div class="uk-margin-bottom uk-margin-top uk-text-meta">2010-2014</div>
+						<img class="uk-margin-bottom" alt="לוגו - האוניברסיטה הפתוחה" src="/assets/img/aboutpage/logo-open-university-israel.jpg">
+						<a class="uk-link-reset" target="_blank" href="http://academic.openu.ac.il/economics/management/pages/default.aspx" title="תואר ראשון במנהל עסקים בהצטיינות, האוניברסיטה הפתוחה">
+							<h3 class="uk-margin-small uk-h2 uk-text-primary uk-width-3-5@m">
+								תואר ראשון במנהל עסקים בהצטיינות, האוניברסיטה הפתוחה
+							</h3>
+						</a>
+						<p class="uk-margin uk-text-large uk-width-4-5@m">
+							לימודי תואר ראשון בניהול, לימודי תשתית וחובה בתחומי ניהול שונים, כגון: שיווק, ניהול הפרסום, התנהגות ארגונית, מימון, חשבונאות וניהול טכנולוגיה. 
+						</p>
+						<p class="uk-margin uk-width-4-5@m">
+							תכנית לימודים מגוונת - רכישת מיומנויות למידה וידע בתחומי עיסוק כגון שיווק, מימון, פרסום, ניהול אסטרטגי ועוד.
+						</p>
+						<ul class="uk-margin-medium uk-list">
+							<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										ניהול הפרסום
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										ניהול השיווק
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										ניהול אסטרטגי
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										מבוא לכלכלה
+									</div>
+								</div>
+							</li>
+							 <!-- end each sub-topics -->
+						</ul>
+					</div>
+									<div class="item">
+						<div class="uk-margin-bottom uk-margin-top uk-text-meta">2010 / 2007</div>
+						<img class="uk-margin-bottom" alt="לוגו - מכללת תלתן" src="/assets/img/aboutpage/Tiltan-College-of-Design-and-Visual-Communication-Logo.jpg">
+						<a class="uk-link-reset" target="_blank" href="http://www.tiltan.co.il/" title="בוגר המסלול תלת שנתי ללימודי עיצוב בהתמחות אינטרנט ואנימציה, תלתן - המכללה לעיצוב ולתקשורת חזותית">
+							<h3 class="uk-margin-small uk-h2 uk-text-primary uk-width-3-5@m">
+								בוגר המסלול תלת שנתי ללימודי עיצוב בהתמחות אינטרנט ואנימציה, תלתן - המכללה לעיצוב ולתקשורת חזותית
+							</h3>
+						</a>
+						<p class="uk-margin uk-text-large uk-width-4-5@m">
+							לימודי עיצוב גרפי ואינטרנט. יסודות העיצוב, חשיבה גרפית, עיצוב לפרסום, ארט דיירקשן, דפוס ועוד.
+						</p>
+						<p class="uk-margin uk-width-4-5@m">
+							בוגר המסלול התלת שנתי במכללת תלתן - במהלך הלימודים רכשתי ידע ומיומנות בתחומי עיצוב שונים ומגוונים ואף נבחרתי לייצג את המכללה במשלחת סטודנטים לאוניברסיטה לעיצוב במנהיים, גרמניה.
+						</p>
+						<ul class="uk-margin-medium uk-list">
+							<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										יסודות העיצוב
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										טיפוגרפיה
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										חשיבה גרפית
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										קונספט בעיצוב
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										תיכנות HTML/CSS
+									</div>
+								</div>
+							</li>
+							 <!-- end each sub-topics -->
+						</ul>
+					</div>
+					 <!-- end each topics -->
+				</div>
+							<h2 itemprop="headline">קורסים מקצועיים</h2>
+				<div id="wrapper" class="uk-card uk-card-default uk-card-small uk-card-body">
+					<div class="item">
+						<div class="uk-margin-bottom uk-margin-top uk-text-meta">2017</div>
+						<img class="uk-margin-bottom" alt="לוגו - Treehouse" src="/assets/img/aboutpage/Treehouse_logo.jpg">
+						<a class="uk-link-reset" target="_blank" href="https://teamtreehouse.com/tracks/web-design" title="Treehouse: Web design &amp; Front End Web Development Tracks">
+							<h3 class="uk-margin-small uk-h2 uk-text-primary uk-width-3-5@m">
+								Treehouse: Web design &amp; Front End Web Development Tracks
+							</h3>
+						</a>
+						<p class="uk-margin uk-text-large uk-width-4-5@m">
+							מסלול מובנה של Treehouse - בנושא עיצוב אתרים ופיתוח צד-לקוח.
+						</p>
+						<p class="uk-margin uk-width-4-5@m">
+							מגוון קורסים עדכניים במסלול מובנה, בנושאי קוד, עיצוב ופיתוח אתרים. טיפוגרפיה, עיצוב רספונסיבי, פיתוח צד-לקוח ועוד.
+						</p>
+						<ul class="uk-margin-medium uk-list">
+							<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										HTML &amp; CSS
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										עיצוב רספונסיבי
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										FLEXBOX Layout, SVG, Sass
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										Bootstrap 4
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										Jquery
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										Website Optimization
+									</div>
+								</div>
+							</li>
+							 <!-- end each sub-topics -->
+						</ul>
+					</div>
+									<div class="item">
+						<div class="uk-margin-bottom uk-margin-top uk-text-meta">2013</div>
+						<img class="uk-margin-bottom" alt="לוגו - קורסרה" src="/assets/img/aboutpage/coursera-logo.jpg">
+						<a class="uk-link-reset" target="_blank" href="https://www.coursera.org/learn/learn-to-program" title="Learn to Program: The Fundamentals - University of Toronto">
+							<h3 class="uk-margin-small uk-h2 uk-text-primary uk-width-3-5@m">
+								Learn to Program: The Fundamentals - University of Toronto
+							</h3>
+						</a>
+						<p class="uk-margin uk-text-large uk-width-4-5@m">
+							קורס מקוון בן חודשיים ב - COURSERA - מיזם למידה מקוונת של קורסים של אוניברסיטאות מובילות בעולם.
+						</p>
+						<p class="uk-margin uk-width-4-5@m">
+							קורס מקיף בנושא יסודות התכנות וכתיבת קוד. הקורס כלל תרגילים ומבחן סופי מקוון.
+						</p>
+						<ul class="uk-margin-medium uk-list">
+							<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										מבוא לתכנות
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										מבוא ל- Python
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										אבני היסוד של שפות תכנות - משתנים, פונקציות, אובייקטים, לולאות ועוד
+									</div>
+								</div>
+							</li>
+							 <!-- end each sub-topics -->
+						</ul>
+					</div>
+									<div class="item">
+						<div class="uk-margin-bottom uk-margin-top uk-text-meta">2012</div>
+						<img class="uk-margin-bottom" alt="לוגו - האוניברסיטה הפתוחה" src="/assets/img/aboutpage/logo-open-university-israel.jpg">
+						<a class="uk-link-reset" target="_blank" href="http://www.openu.ac.il/courses/20441.htm" title="מבוא למדעי המחשב ושפת Java - האוניברסיטה הפתוחה">
+							<h3 class="uk-margin-small uk-h2 uk-text-primary uk-width-3-5@m">
+								מבוא למדעי המחשב ושפת Java - האוניברסיטה הפתוחה
+							</h3>
+						</a>
+						<p class="uk-margin uk-text-large uk-width-4-5@m">
+							הקורס נועד לשמש מבוא למדעי המחשב ומבוא לתכנות.
+						</p>
+						<p class="uk-margin uk-width-4-5@m">
+							קורס מבוא מעמיק למדעי המחשב של האוניברסיטה הפתוחה - העוסק ביסודות התכנות בשפת ג&#x27;אווה
+						</p>
+						<ul class="uk-margin-medium uk-list">
+							<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										הקדמה ויסודות השפה Java
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										יסודות תכנות מונחה עצמים
+									</div>
+								</div>
+							</li>
+													<li class="">
+								<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+									<div class="uk-width-auto ">
+										<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+											<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+										</svg></span>
+									</div>
+									<div>
+										בקרת זרימה
+									</div>
+								</div>
+							</li>
+							 <!-- end each sub-topics -->
+						</ul>
+					</div>
+					 <!-- end each topics -->
+				</div>
+				 <!-- end each tab_education_label -->
+			</section>
+			<!--JOB 3 -->
+			<section id="job3" class="uk-card uk-card-default uk-card-small uk-card-body">
+				<div class="item">
+					<div class="uk-margin-small uk-margin-top uk-text-meta">2015 - היום</div>
+					<h3 class="uk-text-primary uk-margin-small uk-h2">
+						מעצב/מפתח פרילאנסר
+					</h3>
+					<h4 class="uk-margin-small uk-text-large">
+						עיצוב גרפי, עיצוב אתרים, פיתוח אתרים וממשקים במסגרת עצמאית.. 
+					</h4>
+					<p class="uk-margin uk-width-4-5@m">
+						מתן שירותי עיצוב ופיתוח אתרים למגוון לקוחות בתחומים שונים. מתן מענה שוטף ללקוחות בשירותי גרפיקה, תחזוק אתרים, עיצוב קוסטומאלי של אתרים ומערכות על פי דרישה ומסמכי אפיון. עבודה שוטפת מול מתכנתים ומנהלי שיווק.
+					</p>
+					<ul class="uk-margin-medium uk-list">
+						<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב אתרים וממשקים על בסיס תבנית או עיצוב אישי
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									הכנת קבצי עיצוב לתכנות ועבודה מול מפתחים
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב לפרינט
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									אתרי webflow
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב באנרים וגרפיקה לפייסבוק
+								</div>
+							</div>
+						</li>
+						 <!-- end each sub-topics -->
+					</ul>
+				</div>
+							<div class="item">
+					<div class="uk-margin-small uk-margin-top uk-text-meta">2010 / 2007</div>
+					<h3 class="uk-text-primary uk-margin-small uk-h2">
+						מעצב ממשקים, Applife
+					</h3>
+					<h4 class="uk-margin-small uk-text-large">
+						מעצב ממשקים ואתרי תדמית, אתרי חנות, אתרי פורטפוליו, בלוג ועוד.
+					</h4>
+					<p class="uk-margin uk-width-4-5@m">
+						חברת עיצוב אתרי בוטיק. במהלך עבודתי עיצבתי עשרות אתרים על בסיס תבנית או בעיצוב אישי וקוסטומאלי על פי דרישה ואפיון. עיצוב משלים של חומרי פרסום שונים לגוגל אדוורדס ופייסבוק.
+					</p>
+					<ul class="uk-margin-medium uk-list">
+						<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב אתרים וממשקים
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									הכנת קבצי עיצוב לתכנות ועבודה מול מפתחים
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב לפרינט
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									פרוטוטייפינג ב- Invision
+								</div>
+							</div>
+						</li>
+						 <!-- end each sub-topics -->
+					</ul>
+				</div>
+							<div class="item">
+					<div class="uk-margin-small uk-margin-top uk-text-meta">2013 / 2012</div>
+					<h3 class="uk-text-primary uk-margin-small uk-h2">
+						מעצב אינטראקטיב, משרד פרסום דיגיטלי - Twisted
+					</h3>
+					<h4 class="uk-margin-small uk-text-large">
+						עיצוב לפייסבוק, באנרים, קמפיין פרסומי.
+					</h4>
+					<p class="uk-margin uk-width-4-5@m">
+						מעצב אינטראקטיבי במשרד פרסום זוכה פרסי פרסום, המתמחה בתחום הפרסום הדיגיטלי. במהלך התקופה הפקתי ועיצבתי באנרים וחומרים משלימים לאתרים המובילים בתחום. עבודה שוטפת מול לקוחות כגון כללית, ביזפורטל, הוט ועוד ועם מדיות מובילות כגון ynet, nrg, tapuz ועוד.
+					</p>
+					<ul class="uk-margin-medium uk-list">
+						<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									באנרים מופלשים ופריסות גדלים
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									קמפיינים לפייסבוק
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									דפי נחיתה וניוזלטרים
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב אינטרקאטיבי
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									הפקת קמפייני פרסום מקוונים ועבודה מול המדיות המובילות בישראל
+								</div>
+							</div>
+						</li>
+						 <!-- end each sub-topics -->
+					</ul>
+				</div>
+							<div class="item">
+					<div class="uk-margin-small uk-margin-top uk-text-meta">2010-2012</div>
+					<h3 class="uk-text-primary uk-margin-small uk-h2">
+						מעצב גרפי/ביצועיסט, משרד פרסום ברזני לוי (כיום True)
+					</h3>
+					<h4 class="uk-margin-small uk-text-large">
+						עיצוב גרפי לדפוס ופרינט
+					</h4>
+					<p class="uk-margin uk-width-4-5@m">
+						משרד פרסום מוביל המתמחה בקריאייטיב, אסטרטגיה ומדיה. במהלך עבודתי עיצבתי והפקת דברי דפוס ללקוחות מובילי�� בין היתר קפה גרג, משרד התחבורה ועוד, על בסיס גרפיקה קיימת או עיצוב על פי דרישה. עיצוב והתאמת גדלים למודעות ודברי דפוס כגון חוברות, עלונים, הזמנות, הקמת פרזנטציות, עיצוב רולאפים ועוד.
+					</p>
+					<ul class="uk-margin-medium uk-list">
+						<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב לדפוס של מגוון דברי דפוס
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									הקמת פרזנטציות
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									משימות טכניות שוטפות (התאמות גדלים למודעות, תיקוני מלל ועוד)
+								</div>
+							</div>
+						</li>
+											<li>
+							<div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle uk-grid" data-uk-grid="">
+								<div class="uk-width-auto uk-first-column">
+									<span class="uk-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" data-ratio="1">
+										<polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline>
+									</svg></span>
+								</div>
+								<div>
+									עיצוב מודעות ועלונים
+								</div>
+							</div>
+						</li>
+						 <!-- end each sub-topics -->
+					</ul>
+				</div>
+				 <!-- end each topics -->
+				 <!-- end each tab_education_label -->
+			</section>
+		</main>
+	</div>
+	</div>
+	</div>
+	</div><!--end container -->
+	<!-- /end - main - tabs + aside section -->
+	<!-- go-to-main-btn -->
+	<div class="uk-positi3on-bottom-center uk-margin uk-text-center">
+		<a title="חזרה לראש העמוד" data-uk-tooltip="pos: top" class="uk-padding-large" href="#wrapper" data-uk-scroll="">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 48 48" xml:space="preserve" width="48" height="48">
+				<g class="nc-icon-wrapper">
+					<path fill="#1e87f0" d="M45,1H3C1.89543,1,1,1.89543,1,3v42c0,1.10457,0.89543,2,2,2h42c1.10457,0,2-0.89543,2-2V3 C47,1.89543,46.10457,1,45,1z"></path>
+	
+					<path fill="#FFFFFF" d="M24.70789,13.29382c-0.09235-0.09259-0.20306-0.16589-0.32581-0.21674 c-0.24438-0.10107-0.51978-0.10101-0.76416,0.00006c-0.12274,0.05078-0.23346,0.12408-0.32581,0.21667l-7.99915,7.99915 c-0.39062,0.39062-0.39062,1.02344,0,1.41406s1.02344,0.39062,1.41406,0L23,16.41406V36c0,0.55225,0.44727,1,1,1s1-0.44775,1-1 V16.41406l6.29297,6.29297C31.48828,22.90234,31.74414,23,32,23s0.51172-0.09766,0.70703-0.29297 c0.39062-0.39062,0.39062-1.02344,0-1.41406L24.70789,13.29382z"></path>
+				</g>
+			</svg>
+		</a>
+	</div>
+	<!-- isometric mac -->
+		<section class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-image@m uk-flex uk-flex-middle" data-uk-height-viewport="offset-top: true" data-uk-parallax="bgy: 100; viewport:0.5" style="background-image: url('/assets/img/mobile-design-uix-img.jpg');box-sizing: border-box; min-height: 100vh;">
+			<div class="uk-width-1-1">
+				<div class="uk-container uk-position-relative">
+					<div class="uk-grid uk-grid-large uk-grid-margin-large" data-uk-grid="">
+						<div class="uk-width-2-3@m">
+							<div>
+								<div data-uk-scrollspy="cls:uk-animation-slide-top-medium; delay: 50; offset-top:0; repeat: false">
+									<h2 class="uk-margin st-text-light uk-text-center">
+										עיצוב אתרים UIX
+									</h2>
+									<h3 class="uk-margin-medium uk-margin-remove-top uk-width-xlarge uk-margin-auto uk-text-center uk-h1">
+										עיצוב אתרים מוקפד ומודרני ברף הגבוה ביותר
+									</h3>
+								</div>
+								<div class="uk-margin uk-width-xlarge uk-margin-auto uk-text-center" data-uk-scrollspy="cls:uk-animation-fade">
+									<p>
+										לא משנה כיצד תבחר לבנות את האתר שלך העיצוב וחווית המשתמש יהיו גורמים חשובים בהצלחתו. עיצוב אתרים נקי ומודרני עם מבנה נח למשתמש בשילוב אימג&#x27;ים מקצועיים ויישום השפה מותגית שלכם יגרמו לאתר שלכם להראות מקצועי ומעודכן גם בעוד שנים.
+									</p>
+								</div>
+							</div>
+							<div class="uk-margin-large uk-text-center uk-grid-match uk-child-width-1-3 uk-child-width-1-3@s uk-grid-small uk-grid-divider uk-grid" data-uk-grid="" data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 50; offset-top:0; repeat: false">
+								<div>
+									<div class="uk-panel">
+										<h3 class="uk-margin uk-heading-primary uk-margin-remove-adjacent">4</h3>
+										<p class="uk-margin">
+											שנות לימודי עיצוב
+										</p>
+									</div>
+								</div>
+															<div>
+									<div class="uk-panel">
+										<h3 class="uk-margin uk-heading-primary uk-margin-remove-adjacent">+6</h3>
+										<p class="uk-margin">
+											שנות לימודי עיצוב
+										</p>
+									</div>
+								</div>
+															<div>
+									<div class="uk-panel">
+										<h3 class="uk-margin uk-heading-primary uk-margin-remove-adjacent">+9K</h3>
+										<p class="uk-margin">
+											נקודות בקורסי הפיתוח של <a target="_blank" href="https://teamtreehouse.com/ezrasiton">treehouse</a>
+										</p>
+									</div>
+								</div>
+								 <!-- end each counter -->
+						</div>
+						<div class="uk-width-expand@m">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	
+		<!-- footer -->
+		<!-- FOOTER -->
+		<footer itemscope itemtype="http://schema.org/WPFooter" class=" uk-visible@m uk-section uk-section-secondary uk-section-medium uk-padding-remove-bottom">
+			<div itemscope itemtype="http://schema.org/ProfessionalService" class="uk-container uk-container-large">
+				<div class="uk-grid uk-grid-divider uk-grid-large uk-margin-large-bottom" data-uk-grid="" data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 50; offset-top:0; repeat: false">
+					<div class="uk-width-expand@m uk-width-1-2@s">
+						<img alt="עזרא סיטון - תמונת פרופיל" itemprop="image" class="uk-border-circle" src="/assets/img/ezra-siton-profile-image/ezra-siton-profile-image-small.jpg">
+						<a href="//"><h2 itemprop="name" class="uk-text-bold uk-margin-small">
+							עזרא סיטון
+						</h2></a>
+						<p itemprop="description" class="uk-margin-small uk-width-xlarge">
+							מעצב ומפתח אתרים פרילאנסר, ורסטילי בעל יכולות עיצוב ופיתוח ברמה גבוהה ומתקדמת
+						</p>
+						<h3 class="uk-margin-remove-bottom uk-margin-top uk-text-small">
+							רשתות חברתיות
+						</h3>
+		
+						<ul class="uk-subnav uk-subnav-divider">
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://www.xplace.com/il/u/siton">Xplace</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://github.com/Ezra-Siton-UIX">Github</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://il.linkedin.com/in/ezra-siton-6789a069">Linkedin</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://codepen.io/ezra_siton/">CODEPEN</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://forum.webflow.com/u/Siton_Systems/summary">Webflow</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://www.concrete5.org/profile/-/view/229366/">Concrete5</a>
+							</li>
+							<li class="uk-margin-small-bottom">
+								<a itemprop="sameAs" target="_blank" href="https://teamtreehouse.com/ezrasiton">Treehouse</a>
+							</li>
+						</ul>
+					</div>
+		
+					<!-- sitemap -->
+					<div class="uk-width-expand@m uk-width-1-2@s">
+						<h3 class="uk-h3">
+							מפת האתר
+						</h3>
+		
+						<nav id="footer_nav">
+							<ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-3nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+								<li >
+									<a itemprop="url" title="בית" data-uk-tooltip="pos: left" 
+									href="/">
+									בית
+								</a>
+							</li>
+								<li >
+									<a itemprop="url" title="אודות" data-uk-tooltip="pos: left" 
+									href="/he/about">
+									אודות
+								</a>
+							</li>
+								<li class="uk-par3ent uk-3open">
+									<a itemprop="url" title="תיק עבודות" data-uk-tooltip="pos: left" 
+									href="/he/portfolio">
+									תיק עבודות
+								</a>
+								<ul class="uk-nav-sub">
+									<li>
+										<a title="עיצוב אתרים"  data-uk-tooltip="pos: left" href="/he/portfolio/web-design-uix">
+											עיצוב אתרים
+										</a>
+									</li>
+																<li>
+										<a title="עיצוב גרפי"  data-uk-tooltip="pos: left" href="/he/portfolio/graphic-design">
+											עיצוב גרפי
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</li>
+								<li class="uk-par3ent uk-3open">
+									<a itemprop="url" title="שירותים" data-uk-tooltip="pos: left" 
+									href="/he/services">
+									שירותים
+								</a>
+								<ul class="uk-nav-sub">
+									<li>
+										<a title="hello-world"  data-uk-tooltip="pos: left" href="/he/services/hello-world">
+											hello-world
+										</a>
+									</li>
+									<!-- end each portfolio -->
+								</ul>
+							</li>
+								<li >
+									<a itemprop="url" title="בלוג" data-uk-tooltip="pos: left" 
+									href="/he/blog">
+									בלוג
+								</a>
+							</li>
+								<li >
+									<a itemprop="url" title="צור קשר" data-uk-tooltip="pos: left" 
+									href="/he/contact">
+									צור קשר
+								</a>
+							</li>
+						</ul>
+					</nav>
+		
+		
+		
+				</div>
+		
+				<div class="uk-width-expand@m uk-width-1-2@s">
+					<h3 class="uk-h3">
+						צור קשר
+					</h3>
+					<ul class="uk-list uk-list-divider">
+						<li>
+							<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+								<g class="nc-icon-wrapper" fill="#ffffff">
+									<path fill="#ffffff" d="M8,0C4.1,0,1,3.1,1,7c0,1.9,0.7,3.7,2.1,5c0.1,0.1,4.1,3.7,4.2,3.8c0.4,0.3,1,0.3,1.3,0 c0.1-0.1,4.2-3.7,4.2-3.8c1.4-1.3,2.1-3.1,2.1-5C15,3.1,11.9,0,8,0z M8,9C6.9,9,6,8.1,6,7s0.9-2,2-2c1.1,0,2,0.9,2,2S9.1,9,8,9z"></path>
+								</g>
+							</svg>
+							כתובת
+						</h4>
+						<address class="uk-margin-remove" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<strong itemprop="name">WEWORK שרונה</strong> -
+							<span itemprop="streetAddress">
+								אלוף קלמן מגן 3
+							</span>,
+							<span itemprop="addressLocality">
+								תל אביב
+							</span>,
+							<span itemprop="postalCode">
+								6107075
+							</span>.
+							<span itemscope itemtype="http://schema.org/Place">
+								<a class="uk-link" title="הצג בגוגל מפות" itemprop="hasMap" href="https://goo.gl/maps/Pz3pFSKLdqA2" target="_blank">
+									הצג בגוגל מפות
+								</a>
+							</span>
+						</address>
+						<div itemtype="http://schema.org/GeoCoordinates" itemscope="" itemprop="geo">
+							<meta itemprop="latitude" content="32.071304" />
+							<meta itemprop="longitude" content="34.787250" />
+						</div>
+					</li>
+					<li>
+						<h4 class="uk-margin-remove-top uk-margin-remove-bottom">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="13" height="13"><g class="nc-icon-wrapper" fill="#ffffff"><path fill="#ffffff" d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M19,13h-8V5h2v6h6V13z"></path></g></svg>
+							שעות פתיחה
+						</h4>
+						<p class="uk-margin-small">
+							<span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 09:00-18:00">
+								ראשון עד חמישי - 9:00-18:00
+							</span>
+						</p>
+					</li>
+					<li>
+						<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+							<g class="nc-icon-wrapper" fill="#ffffff">
+								<path fill="#ffffff" d="M15.285,12.305l-2.578-2.594c-0.39-0.393-1.025-0.393-1.416-0.002L9,12L4,7l2.294-2.294 c0.39-0.39,0.391-1.023,0.001-1.414l-2.58-2.584C3.324,0.317,2.691,0.317,2.3,0.708L0.004,3.003L0,3c0,7.18,5.82,13,13,13 l2.283-2.283C15.673,13.327,15.674,12.696,15.285,12.305z"></path>
+								<path data-color="color-2" fill="#ffffff" d="M16,8h-2c0-3.309-2.691-6-6-6V0C12.411,0,16,3.589,16,8z"></path>
+								<path data-color="color-2" fill="#ffffff" d="M12,8h-2c0-1.103-0.897-2-2-2V4C10.206,4,12,5.794,12,8z"></path>
+							</g>
+						</svg>
+						נייד
+					</h4>
+					<a href="tel:	0523-408-910" class="uk-margin"><span itemprop="telephone">0523-408-910</span></a>
+				</li>
+				<li>
+					<h4 class="uk-margin-small-bottom"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16 16" xml:space="preserve" width="13" height="13">
+						<g class="nc-icon-wrapper" fill="#ffffff">
+							<path data-color="color-2" fill="#ffffff" d="M15,1H1C0.4,1,0,1.4,0,2v1.4l8,4.5l8-4.4V2C16,1.4,15.6,1,15,1z"></path>
+							<path fill="#ffffff" d="M7.5,9.9L0,5.7V14c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1V5.7L8.5,9.9C8.22,10.04,7.78,10.04,7.5,9.9z"></path>
+						</g>
+					</svg>
+					דוא&quot;ל
+				</h4>
+				<!-- Target -->
+				<a id="email" class="uk-display-inline-block" itemprop="email" href="mailto:siton22@hotmail.com">siton22@hotmail.com</a>
+				<!-- Trigger -->
+				<button id="email-copy-btn" class="uk-button uk-button-primary uk-button-small uk-margin-small-right uk-margin-left" data-clipboard-target="#email">
+					העתק
+				</button>
+				<div>&nbsp;<span class="copied">כתובת הועתקה</span></div>
+			</li>
+		</ul>
+		</div>
+		</div>
+		<!-- END grid -->
+		<!-- LOGOS -->
+		<a class="uk-link-reset" href="https://www.endurojs.com/" target="_blank">
+			<img src="/assets/img/webdesign/logos/enduro-nodejs-cms.png" alt="Enduro.js CMS logo">
+		</a>&nbsp;
+		<a class="uk-link-reset" href="https://getuikit.com/" target="_blank" style="direction: ltr;">
+			<div class="uk-display-inline-block" style="direction: ltr;">
+				<img src="/assets/img/webdesign/logos/uikit-logo-white.svg" alt="לוגו של הפריימוורק לבניית אתרים - uiKit">
+				<span> UIkit</span>
+			</div>
+		</a>
+		<div class="">
+			<p class="uk-text-center uk-text-small">
+				<p class="uk-text-center uk-text-small"><span class="uk-visible@m">עיצוב ופיתוח אתר: עזרא סיטון &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;אתר זה נבנה  באמצעות הפריימוורק הרספונסיבי המתקדם&nbsp;<a target="_blank" href="https://getuikit.com/" title="uiKit - A lightweight and modular front-end framework">UIkit<sup>3</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&copy;כל הזכויות ל-עזרא סיטון, 2018</span></p>
+			</p>
+		</div>
+		</div><!--end conatiner -->
+		<!-- UP BTN -->
+		<div title="TOP" data-uk-tooltip="pos: top-center">
+			<a href="#" data-uk-scroll="">
+				<div class="uk-section uk-section-primary uk-section-small uk-text-center">
+					<div class="uk-button uk-button-default uk-button-large uk-icon">
+						חזרה לראש העמוד
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" xml:space="preserve" width="24" height="24">
+							<g class="nc-icon-wrapper" fill="#ffffff">
+								<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="22" x2="12" y2="2" stroke-linejoin="miter" stroke-linecap="butt"></line>
+								<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5,9 12,2 19,9 " stroke-linejoin="miter"></polyline>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</a>
+		</div>
+		</footer>
+		<!-- MOBILE FOOTER -->
+		<footer id="mobile-footer" class="uk-hidden@m uk-light uk-padding-small uk-section-secondary">
+			<div class=" uk-margin-auto uk-flex uk-flex-center">
+				<!-- Mobile menu - less links! -->
+				<ul class="uk-subnav uk-subnav-divider" data-uk-margin="">
+					<li class="uk-active">
+						<a href="/">בית</a>
+					</li>
+					<li>
+						<a href="/about">אודות</a>
+					</li>
+					<li>
+						<a href="/portfolio">תיק עבודות</a>
+					</li>
+					<li>
+						<a href="/contact">צור קשר</a>
+					</li>
+				</ul>
+			</div>
+			<!-- TOP BTN -->
+			<div title="TOP" data-uk-tooltip="pos: top-center">
+				<a href="#" data-uk-scroll="">
+					<div class="uk-section uk-section-secondary uk-section-small uk-text-center">
+						<div class="uk-button uk-button-default uk-button-large uk-icon">
+							חזרה לראש העמוד
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" xml:space="preserve" width="24" height="24">
+								<g class="nc-icon-wrapper" fill="#ffffff">
+									<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="22" x2="12" y2="2" stroke-linejoin="miter" stroke-linecap="butt"></line>
+									<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5,9 12,2 19,9 " stroke-linejoin="miter"></polyline>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- copyrights -->
+			<p class="uk-text-center uk-text-small uk-hidden@m uk-margin-remove"><small>
+				&copy;
+				כל הזכויות ל-<a  title="עזרא סיטון" href="//">עזרא סיטון</a>
+				,
+				2018</small></p>
+			</footer>
+			<!-- /end FOOTER -->
+		<!-- scripts -->
+		<!-- UIkit JS --> 
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script> 
+		
+		
+		
+		<!-- async -->
+		<!-- jQuery is required -->
+		<script  defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<!-- FancyBox3 --> 
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script> 
+		 
+	
+		<!-- initialize -->
+		<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			// Custom click event - open fancyBox manually
+			// Choose what buttons to display by default
+			$().fancybox({
+				selector : '[data-fancybox="web-design-uix"]',
+				thumbs   : true,
+				hash     : true,
+				infobar : true,
+				arrows : true,
+				buttons : [
+					'thumbs',
+					'close'
+				],
+				loop : true,
+				transitionEffect  : "slide",
+				thumbs : {
+					autoStart : false
+				},
+				clickContent : function( current, event ) {
+					return current.type === 'image' ? 'next' : false;
+				},
+			});
+		});
+		</script>
+	
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+	// Active state
+	function setActive() {
+		aObj = document.getElementById('nav-desktop').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive();
+
+	// Set lan buttons
+	let englishhPath =  currentPath.replace(/he/, "en");
+	let hebrewPath = currentPath.replace(/en/, "he");
+	document.getElementById('heb-button').href = hebrewPath;
+	document.getElementById('en-button').href = englishhPath;
+
+	// Active state
+	function setActive2() {
+		aObj = document.getElementById('nav-mobile').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive2();
+
+
+	// Active state
+	function setActive3() {
+		aObj = document.getElementById('footer_nav').getElementsByTagName('a');
+		currentPath = window.location.pathname;
+		for(i=0;i<aObj.length;i++) {
+			if(aObj[i].getAttribute('href') == currentPath && aObj[i].parentElement.tagName == 'LI') {
+				aObj[i].parentElement.className='uk-active';
+			}
+		}
+	}
+	setActive3();
+
+
+
+});
+
+
+</script>
+
+<!-- clipboard -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var clip = new Clipboard('#email-copy-btn');
+
+clip.on('success', function(e) {
+$('.copied').show();
+$('.copied').fadeOut(1000);
+});
+
+
+});
+
+</script>
+</body>
+</html>

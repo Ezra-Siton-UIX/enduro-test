@@ -1,0 +1,197 @@
+{{>head}}
+<!--plugins-->
+{{>fancybox-css}}
+{{>swiper-css}}
+{{>vegas-css}}
+</head>
+<body id="WOW">
+	{{#>body}}
+
+	<!-- *******************************************************
+	CONTENT START HER
+	******************************************************* -->
+
+	{{>inside_header}}
+
+	<!-- Breadcrumb -->
+	<nav class="uk-container uk-container-large uk-margin-bottom" itemprop="breadcrumb">
+		<ol itemscope itemtype="http://schema.org/BreadcrumbList" class="uk-breadcrumb uk-margin-small-top">
+			<li itemprop="itemListElement" itemscope	itemtype="http://schema.org/ListItem">
+				<a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="../{{global.language}}" data-uk-tooltip="pos: bottom" title="{{global.breadcrumbs_back_to_main}}">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24">
+						<g class="nc-icon-wrapper" fill="#999999">
+							<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+						</g>
+					</svg>
+					<span itemprop="name">{{global.home_label_name}}</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</li>
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="../{{global.language}}/{{seo.page_name}}">
+					<span itemprop="name">
+						{{seo.title}}
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</li>
+		</ol>
+	</nav>
+
+	<main class="uk-container uk-container-large uk-margin-large-bottom" data-uk-height-viewport="offset-top: true">
+
+
+
+		{{#services}}
+		{{#each this}}
+		<article>
+			<h2>{{services_entry.title}}</h2>
+			<p>{{{services_entry.text}}}</p>
+			<a href="/services/{{page_slug}}">Read more...</a>
+		</article>
+		{{/each}}
+		{{/services}}
+
+	</main>
+
+	<!-- footer -->
+	{{>footer}}
+	<!-- scripts -->
+	{{>uikit}}
+	{{>jquery}}
+	{{>fancybox}}
+	{{>vegas}}
+	{{>swiper}}
+	{{>responsiveslides}}
+	{{>readmore}}
+	<!-- initialize -->
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function() {
+
+		// Fancybox3
+		$().fancybox({
+			selector : '[data-fancybox="web-design-uix"]',
+			thumbs   : true,
+			hash     : true,
+			infobar : true,
+			arrows : true,
+			buttons : [
+				'thumbs',
+				'close'
+			],
+			loop : true,
+			transitionEffect  : "slide",
+			thumbs : {
+				autoStart : false
+			},
+			clickContent : function( current, event ) {
+				return current.type === 'image' ? 'next' : false;
+			},
+		});
+
+		var mySwiper = new Swiper ('.swiper-container', {
+			// Optional parameters
+			slidesPerView: 3,
+			spaceBetween: 30,
+			loop: false,
+			grabCursor: true,
+			slideToClickedSlide: false,
+			freeMode: false,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				hide: true,
+			},
+
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is <= 640px
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 30
+				}
+			}
+
+		});
+
+		// VEGAS
+		// Background SLideShow
+		$('header').vegas({
+			overlay: true,
+			transition: 'fade2',
+			transitionDuration: 5000,
+			delay: 9000,
+			color: 'black',
+			shuffle: true,
+			animation: 'random',
+			animationDuration: 15000,
+
+			overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/04.png',
+
+
+			slides: [
+				{ src: '/assets/img/webdesign/app-design-isometrics-mockup-uix-siton.jpg' },
+				{ src: '/assets/img/webdesign/webdesign-uix-resturant-homepage-siton.jpg' },
+				{ src: '/assets/img/webdesign/app-design-offcanvas-menu-design-siton.jpg' },
+				{ src: '/assets/img/webdesign/webdesign-uix-about-page-rtl-siton.jpg' },
+				{ src: '/assets/img/webdesign/webdesign-uix-startup-one-page-siton.jpg' },
+				{ src: '/assets/img/webdesign/webdesign-uix-about-page-siton.jpg' }
+			]
+		});
+
+
+		$('#vegas-laptop').vegas({
+
+			transition: 'fade',
+			timer: false,
+			color: 'black',
+			shuffle: false,
+
+			animationDuration: 20000,
+			slides: [
+				{ src: '/assets/img/homepage/mobile-design-uix-img.jpg' },
+				{ src: '/assets/img/homepage/mobile-design-uix-img-2.jpg' },
+
+			]
+		});
+
+		$('#vegas-laptop-white-macbook').vegas({
+
+			transition: 'fade2',
+			timer: false,
+			color: 'black',
+			shuffle: false,
+
+			animationDuration: 20000,
+			slides: [
+				{ src: '/assets/img/laptop.jpg' },
+				{ src: '/assets/img/laptop-2.jpg' },
+
+			]
+		});
+
+		//responsiveSlides
+		$(function() {
+			$(".rslides").responsiveSlides();
+		});
+
+
+
+	});
+
+
+	</script>
+	{{/body}}<!-- הסוגר של זה בטמפלט של בודי -->

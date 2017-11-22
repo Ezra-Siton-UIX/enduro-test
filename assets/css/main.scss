@@ -1,0 +1,144 @@
+html{
+	background: white;
+}
+
+
+html,.uk-h4, h4{
+	font-family:   'atlas-pro', sans-serif; 
+}
+h1, .uk-h1, .uk-logo{
+	font-family:   'atlas-pro', sans-serif; 
+	font-weight:   900; 
+	letter-spacing: 2px;
+}
+.uk-h2, h2{
+	font-family:   'atlas-pro', sans-serif; 
+	font-weight:   500; 
+	letter-spacing: 1px;
+}
+.uk-h3, h3{
+	line-height: 25px;
+}
+.uk-h3, h3, .uk-navbar-container li a{
+	font-family:   'atlas-pro', sans-serif; 
+	font-weight:   500; 
+	letter-spacing: 1px;
+}
+#desktop-nav .uk-navbar-nav > .uk-active{
+	border-bottom: 2px solid #1e87f0;
+}
+.st-text-light{
+	font-family:   'atlas-pro', sans-serif; 
+	font-weight:   300; 
+}
+.uk-navbar-nav>li.uk-active>a{
+	font-family:   'atlas-pro', sans-serif; 
+	font-weight: 500;
+	border-bottom: 2px solid #1e87f0;
+}
+.uk-button{
+	font-family:   'atlas-pro', sans-serif; 
+}
+.tm-header-transparent{
+	position: absolute;
+	z-index: 980;
+	left: 0;
+	right: 0;
+}
+.vegas-timer-progress{
+	background-color:#1e87f0;
+}
+.uk-navbar-sticky{
+	background-color:#20202f!important;
+}
+.st-header{
+	font-size: 40px;
+	line-height: 38px;
+}
+@media screen and (max-width: 900px) {
+	.uk-tile h1.st-header{
+		font-size: 30px;
+		line-height: 29px;
+	}
+	.uk-tile h2.st-header{
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+/* R_SLIDES */
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+/* laptop section */
+@media screen and (min-width: 900px) {
+	div#laptop-text{
+		position: relative;
+		left: 50px;
+		z-index: 50;
+	}
+}
+.arrow-button:hover{
+	fill: #0f79e3;
+}
+/* SWIPER */
+.swiper-container {
+	//width: 100%;
+	//height: 100%;
+}
+ul.swiper-wrapper{
+	list-style-type: none;
+}
+.swiper-pagination-bullet{
+	width: 12px;
+	height: 12px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+	bottom: 10px;
+}
+#services .swiper-slide {
+	width: 30%;
+}
+
+#why-us .swiper-slide {
+	width: 24%;
+}
+
+/* readmore */
+.readmore{
+	overflow: hidden;
+}
+/* FANCYBOX */
+.fancybox-slide>*{
+	width: auto;
+}
+
+.uk-subnav li.uk-active a{
+	color: #1e87f0;
+	
+}	
+
