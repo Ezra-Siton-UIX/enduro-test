@@ -43,7 +43,7 @@
 			},
 			{
 				label: 'שירותים',
-				link: '/he/services',
+				link: '/he/services-list',
 				new_window: false,
 				is_parent: true,
 				$portfolio_size: 6,
@@ -57,14 +57,14 @@
 					}
 				],
 				$label_en: 'Services',
-				$link_en: '/en/Services/'
+				$link_en: '/en/Services-list/'
 			},
 			{
 				label: 'בלוג',
-				link: '/he/blog',
+				link: '/he/blog-list',
 				new_window: false,
 				$link_en: '/en/blog',
-				$label_en: 'blog'
+				$label_en: 'blog-list'
 			},
 			{
 				label: 'צור קשר',
@@ -76,6 +76,6 @@
 		]
 	},
 	meta: {
-		last_edited: 1511359076
+		last_edited: 1511365722
 	}
 }

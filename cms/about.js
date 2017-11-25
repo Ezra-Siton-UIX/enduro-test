@@ -6,7 +6,7 @@
 	$seo_hidden: false,
 	seo: {
 		title: 'אודות',
-		page_name: 'אודות',
+		page_name: 'about',
 		$seo_description_type: 'textarea',
 		seo_description: 'מעצב גרפי ומפתח אתרים ורסטילי ומיומן, משלב יכולות עיצוב קריאטייבי, ידע בשימושיות UIX ומיומנות בפיתוח אתרים FRONTEND.',
 		seo_keywords: 'html5, schema.org, Web design, Graphic design, User Interface desgin, Mobile design, App design, Webflow expert, UiKit expert, Israel designer freelancer, WIX, Material design, HTML & CSS, Web designer, Graphic designer, UIX designer, FRONTEND developer',
@@ -727,7 +727,7 @@
 					heading: 'מעצב גרפי/ביצועיסט, משרד פרסום ברזני לוי (כיום True)',
 					lead_text: 'עיצוב גרפי לדפוס ופרינט',
 					$paragraph: 'textarea',
-					paragraph: 'משרד פרסום מוביל המתמחה בקריאייטיב, אסטרטגיה ומדיה. במהלך עבודתי עיצבתי והפקת דברי דפוס ללקוחות מובילי�� בין היתר קפה גרג, משרד התחבורה ועוד, על בסיס גרפיקה קיימת או עיצוב על פי דרישה. עיצוב והתאמת גדלים למודעות ודברי דפוס כגון חוברות, עלונים, הזמנות, הקמת פרזנטציות, עיצוב רולאפים ועוד.',
+					paragraph: 'משרד פרסום מוביל המתמחה בקריאייטיב, אס��רטגיה ומדיה. במהלך עבודתי עיצבתי והפקת דברי דפוס ללקוחות מובילי�� בין היתר קפה גרג, משרד התחבורה ועוד, על בסיס גרפיקה קיימת או עיצוב על פי דרישה. עיצוב והתאמת גדלים למודעות ודברי דפוס כגון חוברות, עלונים, הזמנות, הקמת פרזנטציות, עיצוב רולאפים ועוד.',
 					years: '2010-2012',
 					$sub_topics: 4,
 					$sub_topics_expander: true,

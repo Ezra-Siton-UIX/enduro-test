@@ -7,16 +7,17 @@
 <body itemscope itemtype="http://schema.org/WebPage">
 	{{#>body}}
 
-	{{#blog}}
+	{{#services}}
 	    {{#each this}}
-	        <article>
-	          <!--wow -->
-	            <h2>{{blog_entry.blog_title}}</h2>
-	            <p>{{{blog_entry.blog_text}}}</p>
-	            <a href="/blog/{{page_slug}}">Read more...</a>
+	        <hr>
+			<article>
+				
+	            <h2>{{services_entry.title}}</h2>
+	            <p>{{{services_entry.text}}}</p>
+	            <a href="/services/{{page_slug}}">Read more...</a>
 	        </article>
 	    {{/each}}
-	{{/blog}}
+	{{/services}}
 
 
 
